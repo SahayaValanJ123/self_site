@@ -77,94 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* --- Interactive Pricing Calculator --- */
-    const platformInputs = document.querySelectorAll('input[name="platform"]');
-    const addonDomain = document.getElementById('addon-domain');
-    const addonSeo = document.getElementById('addon-seo');
-    const addonBooking = document.getElementById('addon-booking');
-
-    const summaryPlatformLabel = document.getElementById('summary-platform-label');
-    const summaryPlatformPrice = document.getElementById('summary-platform-price');
-    const summaryAddonsList = document.getElementById('summary-addons-list');
-    const summaryTotalPrice = document.getElementById('summary-total-price');
-    const calcApplyBtn = document.getElementById('calc-apply-btn');
-
-    const platformRates = {
-        'website-single': { name: 'Single-Page Website', price: 149 },
-        'website-multi': { name: 'Multi-Page Website (3-5 pg)', price: 299 },
-        'app-only': { name: 'Android App Only', price: 399 },
-        'bundle': { name: 'Web + Android App Bundle', price: 499 }
-    };
-
-    function updateQuote() {
-        let total = 0;
-        
-        // 1. Get selected platform details
-        let selectedPlatform = 'website-single';
-        platformInputs.forEach(input => {
-            if (input.checked) {
-                selectedPlatform = input.value;
-            }
-        });
-
-        const platformData = platformRates[selectedPlatform];
-        total += platformData.price;
-
-        // Update platform summary row
-        summaryPlatformLabel.textContent = platformData.name;
-        summaryPlatformPrice.textContent = `$${platformData.price}`;
-
-        // 2. Process Add-ons
-        summaryAddonsList.innerHTML = '';
-        const addonsSelected = [];
-
-        if (addonDomain.checked) {
-            const price = parseInt(addonDomain.value);
-            total += price;
-            addonsSelected.push({ name: 'Custom Domain Setup', price });
-        }
-        if (addonSeo.checked) {
-            const price = parseInt(addonSeo.value);
-            total += price;
-            addonsSelected.push({ name: 'Advanced Local SEO', price });
-        }
-        if (addonBooking.checked) {
-            const price = parseInt(addonBooking.value);
-            total += price;
-            addonsSelected.push({ name: 'Appointment Booking System', price });
-        }
-
-        // Render add-ons in summary list
-        addonsSelected.forEach(addon => {
-            const row = document.createElement('div');
-            row.className = 'summary-line';
-            row.innerHTML = `
-                <span class="line-label">+ ${addon.name}</span>
-                <span class="line-price">+$${addon.price}</span>
-            `;
-            summaryAddonsList.appendChild(row);
-        });
-
-        // 3. Update total price
-        summaryTotalPrice.textContent = `$${total}`;
-        
-        return {
-            platformName: platformData.name,
-            addons: addonsSelected.map(a => a.name),
-            totalPrice: total
-        };
-    }
-
-    // Add event listeners to calculator inputs
-    platformInputs.forEach(input => input.addEventListener('change', updateQuote));
-    addonDomain.addEventListener('change', updateQuote);
-    addonSeo.addEventListener('change', updateQuote);
-    addonBooking.addEventListener('change', updateQuote);
-
-    // Run once on load
-    updateQuote();
-
-
     /* --- Fill Forms via Buttons --- */
     const serviceSelect = document.getElementById('service-type');
     const modelSelect = document.getElementById('selected-model');
@@ -198,32 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Quote Apply button action
-    calcApplyBtn.addEventListener('click', () => {
-        const quote = updateQuote();
-        
-        // Map service value
-        if (quote.platformName.includes('Single-Page')) {
-            serviceSelect.value = 'Single-Page Website';
-        } else if (quote.platformName.includes('Multi-Page')) {
-            serviceSelect.value = 'Multi-Page Website';
-        } else if (quote.platformName.includes('Android App Only')) {
-            serviceSelect.value = 'Android Application';
-        } else {
-            serviceSelect.value = 'Web & Android App Bundle';
-        }
 
-        // List selected add-ons in text
-        let addonsText = quote.addons.length > 0 ? quote.addons.join(', ') : 'None';
-        messageTextarea.value = `Hi! I estimated my project using your calculator.\n\n` +
-                                `• Selected Service: ${quote.platformName}\n` +
-                                `• Selected Add-ons: ${addonsText}\n` +
-                                `• Estimated Quote: $${quote.totalPrice}\n\n` +
-                                `Please reach out to finalize details!`;
-
-        // Scroll to form
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    });
 
 
     /* --- Interactive Preview Lightbox (Model Modal) --- */
@@ -489,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. Format a secondary prompt suggestion so client can send immediately on WhatsApp
         // We'll prepare a formatted link if they want direct follow-up on WhatsApp
-        const waText = `Hi! I just submitted a project request on AuraCraft Studio:\n\n` +
+        const waText = `Hi! I just submitted a project request on ValanWebcraft Studio:\n\n` +
                        `👤 Name: ${nameVal}\n` +
                        `💼 Business: ${businessVal} (${sectorVal})\n` +
                        `🛠️ Needed: ${serviceVal}\n` +
@@ -499,14 +386,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update the WhatsApp button at the bottom of the page to match their inputs!
         const waBtn = document.querySelector('.btn-wa');
         if (waBtn) {
-            waBtn.href = `https://wa.me/918072739023?text=${encodeURIComponent(waText)}`;
+            waBtn.href = `https://wa.me/918248074540?text=${encodeURIComponent(waText)}`;
         }
     });
 
     resetFormBtn.addEventListener('click', () => {
         successMessage.classList.remove('active');
         projectForm.reset();
-        updateQuote(); // reset summary details
     });
 
 });
