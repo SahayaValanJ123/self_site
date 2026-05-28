@@ -1,11 +1,11 @@
-# AI Model Prompts: ValanWebcraft Studio Portfolio
+# AI Model Prompts: JSVSites Portfolio
 
 Use the guidelines, instructions, and structure below to guide other AI models in editing, rebuilding, or extending your professional web & mobile app design portfolio.
 
 ---
 
 ## 1. Project Overview & Tech Stack
-*   **Brand Name**: ValanWebcraft Studio
+*   **Brand Name**: JSVSites
 *   **Target Audience**: Small-scale businesses (cafes, retail stores, gyms, local wellness centers, service providers).
 *   **Tech Stack**: Vanilla HTML5, CSS3 (variables, transitions, custom mockups), ES6 JavaScript.
 *   **Theme**: Modern dark mode/obsidian palette with vibrant indigo, purple, and emerald glow overlays. Heavy use of glassmorphism (`backdrop-filter`).
@@ -17,12 +17,16 @@ Use the guidelines, instructions, and structure below to guide other AI models i
 
 ## 2. Core Site Architecture
 The site is single-page, responsive, and contains the following sections:
-1.  **Navbar**: Sticky glassmorphic navbar with logo (`ValanWebcraft Studio`), menu options, and mobile hamburger toggle.
+1.  **Navbar**: Sticky glassmorphic navbar with logo (`JSVSites.com`), menu options, and mobile hamburger toggle.
 2.  **Hero Section**: Text value proposition with call-to-actions, stats counter, and CSS-drawn device mockups (responsive laptop + floating Android phone).
-3.  **Services Section**: Three-column grid displaying key services (Single-page sites, Multi-page sites, and Android App development).
+3.  **Services Section**: Four-column grid displaying key services:
+    *   Elegant Web Design
+    *   Android App Development
+    *   Vercel Hosting & Domain Configuration
+    *   Continuous Support (regular updates, scaling assistance, post-launch bug fixes)
 4.  **Website Models Section**: A category-filterable grid of pre-designed templates with an interactive "Preview" modal containing browser mockups.
-5.  **Contact Section**: An inquiry form that automatically generates a WhatsApp redirection message containing formatted inputs on form submission.
-6.  **Footer**: Brand logo, quick links, copyright, and deployment/hosting credits.
+5.  **Contact Section**: An inquiry form that automatically generates a WhatsApp redirection message containing formatted inputs on form submission, plus instant direct call link.
+6.  **Footer**: Brand logo (`JSVSites.com`), copyright statement, and hosting/tech credentials. (Note: Quick Navigation links are removed for visual simplicity).
 
 ---
 
@@ -65,11 +69,11 @@ When adding styles or modifying layouts, always adhere to the design system:
     ```
 *   **Fallback Behavior**: If a screenshot (e.g. `bakehouse.png`) is missing or fails to load, `onerror="this.style.display='none'"` executes automatically. The CSS fallback mockup is displayed immediately, ensuring the site looks complete.
 
-### C. Contact Form & WhatsApp Integration
+### C. Contact Form & WhatsApp / Call Integration
 *   The form collects `Name`, `Email`, `Business Name`, `Sector`, `Service Needed`, `Model Pattern`, and `Message`.
 *   Form submit processes inputs and formats a direct WhatsApp text:
     ```javascript
-    const waText = `Hi! I just submitted a project request on ValanWebcraft Studio:\n\n` +
+    const waText = `Hi! I just submitted a project request on JSVSites:\n\n` +
                    `👤 Name: ${nameVal}\n` +
                    `💼 Business: ${businessVal} (${sectorVal})\n` +
                    `🛠️ Needed: ${serviceVal}\n` +
@@ -77,6 +81,7 @@ When adding styles or modifying layouts, always adhere to the design system:
                    `📝 Requirements: ${messageVal}`;
     ```
 *   The WhatsApp redirect URL points to `https://wa.me/918248074540?text=[waText]`.
+*   A complementary Call Now button links directly to phone number `tel:8248074540`.
 
 ---
 

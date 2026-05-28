@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 4. Format a secondary prompt suggestion so client can send immediately on WhatsApp
         // We'll prepare a formatted link if they want direct follow-up on WhatsApp
-        const waText = `Hi! I just submitted a project request on ValanWebcraft Studio:\n\n` +
+        const waText = `Hi! I just submitted a project request on JSVSites:\n\n` +
                        `👤 Name: ${nameVal}\n` +
                        `💼 Business: ${businessVal} (${sectorVal})\n` +
                        `🛠️ Needed: ${serviceVal}\n` +

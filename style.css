@@ -206,6 +206,17 @@ ul {
     box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
 }
 
+.btn-call {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.25);
+}
+
+.btn-call:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
 /* Header & Navigation */
 .navbar {
     position: fixed;
@@ -693,6 +704,11 @@ ul {
 .service-icon-wrapper.blue {
     background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+.service-icon-wrapper.orange {
+    background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
+    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.2);
 }
 
 .service-card h3 {
