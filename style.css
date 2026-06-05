@@ -1534,6 +1534,18 @@ textarea {
         font-size: 0.82rem;
     }
 
+    /* Disable heavy backdrop filters on mobile to prevent scrolling glitches */
+    .card, .service-card, .navbar, .modal-overlay {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+    .navbar {
+        background: rgba(252, 251, 250, 0.98);
+    }
+    .card, .service-card {
+        background: rgba(255, 255, 255, 0.95);
+    }
+
     /* Tablet device scale adjustment */
     .mockup-container {
         width: 100%;

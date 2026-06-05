@@ -187,7 +187,11 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', (e) => {
             const modelKey = btn.getAttribute('data-model');
             const modelTitle = btn.getAttribute('data-model-title');
-            openModal(modelKey, modelTitle);
+            if (window.innerWidth <= 768) {
+                window.open(`projects/${modelKey}/index.html`, '_blank');
+            } else {
+                openModal(modelKey, modelTitle);
+            }
         });
     });
 
