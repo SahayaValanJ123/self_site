@@ -89,15 +89,23 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const saveCartLocal = () => {
-    localStorage.setItem('maligai_cart', JSON.stringify(cart));
+    try {
+      localStorage.setItem('maligai_cart', JSON.stringify(cart));
+    } catch (e) {
+      console.warn("localStorage setItem is disabled:", e);
+    }
   };
 
   const loadCartLocal = () => {
-    const saved = localStorage.getItem('maligai_cart');
-    if (saved) {
-      cart = JSON.parse(saved);
-      updateCartBadge();
-      renderCartItems();
+    try {
+      const saved = localStorage.getItem('maligai_cart');
+      if (saved) {
+        cart = JSON.parse(saved);
+        updateCartBadge();
+        renderCartItems();
+      }
+    } catch (e) {
+      console.warn("localStorage getItem is disabled:", e);
     }
   };
 
