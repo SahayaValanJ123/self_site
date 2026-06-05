@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroFix | Certified Pre-Owned Mobiles & Professional Repair</title>
+  <meta name="description" content="ElectroFix is your local destination for premium certified pre-owned smartphones and express hardware/software repair services. Get instant quotes online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="navbar">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span>ElectroFix</span>
+      </a>
+
+      <button class="hamburger-menu" id="menu-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#catalog" class="nav-link">Smartphones</a>
+        <a href="#estimator" class="nav-link">Repair Estimator</a>
+        <a href="#tracker" class="nav-link">Track Repair</a>
+        <a href="#estimator" class="nav-cta-btn">Book Repair</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="grid-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="promo-tag">✓ Certified Refurbished &bull; ✓ Same-Day Repair</span>
+          <h1 class="hero-title">Premium Flagships. Expert Fixes.</h1>
+          <p class="hero-desc">Your ultimate destination for quality certified pre-owned mobile devices and express, certified repair. Screen cracks, battery drains, or water damage—we solve them all.</p>
+          <div class="hero-btns">
+            <a href="#estimator" class="btn btn-primary" id="btn-quote-scroll">Get Repair Estimate</a>
+            <a href="#catalog" class="btn btn-secondary" id="btn-deals-scroll">Browse Phones</a>
+          </div>
+        </div>
+        
+        <div class="hero-card-panel">
+          <div class="device-showcase-card">
+            <div class="screen-header">
+              <span class="notch"></span>
+            </div>
+            <div class="screen-body">
+              <div class="app-header">
+                <h3>Repair Center Live</h3>
+                <span class="live-dot"></span>
+              </div>
+              <div class="stat-bubble">
+                <span class="bubble-title">Repairs Done Today</span>
+                <span class="bubble-number">47</span>
+              </div>
+              <div class="stat-bubble">
+                <span class="bubble-title">Avg. Turnaround</span>
+                <span class="bubble-number">45m</span>
+              </div>
+              <div class="stat-bubble">
+                <span class="bubble-title">Warranty Provided</span>
+                <span class="bubble-number">90 Days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sales Catalog Section -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-title">
+          <h2>Certified Pre-Owned Hot Deals</h2>
+          <p>Strictly inspected, battery-health tested, and backed by our full store warranty.</p>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-brand="all" id="btn-filter-all">All Brands</button>
+          <button class="filter-tab" data-brand="apple" id="btn-filter-apple">Apple iPhone</button>
+          <button class="filter-tab" data-brand="samsung" id="btn-filter-samsung">Samsung Galaxy</button>
+          <button class="filter-tab" data-brand="google" id="btn-filter-google">Google Pixel</button>
+        </div>
+
+        <div class="catalog-grid" id="catalog-container">
+          <!-- Card 1 -->
+          <div class="phone-card" data-brand="apple">
+            <div class="phone-badge">Like New</div>
+            <div class="phone-avatar-placeholder"></div>
+            <div class="phone-info">
+              <h3>iPhone 14 Pro Max (256GB)</h3>
+              <p class="phone-specs">Space Black &bull; 92% Battery Health &bull; Unlocked</p>
+              <div class="price-row">
+                <span class="promo-price">$789</span>
+                <span class="retail-price">$1,099</span>
+              </div>
+              <button class="btn btn-primary btn-sm deal-inquire-trigger" data-phone="iPhone 14 Pro Max">Check Availability</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="phone-card" data-brand="samsung">
+            <div class="phone-badge promo">Best Deal</div>
+            <div class="phone-avatar-placeholder">S</div>
+            <div class="phone-info">
+              <h3>Galaxy S23 Ultra (512GB)</h3>
+              <p class="phone-specs">Phantom Black &bull; Brand New Screen &bull; Unlocked</p>
+              <div class="price-row">
+                <span class="promo-price">$699</span>
+                <span class="retail-price">$1,299</span>
+              </div>
+              <button class="btn btn-primary btn-sm deal-inquire-trigger" data-phone="Galaxy S23 Ultra">Check Availability</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="phone-card" data-brand="google">
+            <div class="phone-badge">Excellent</div>
+            <div class="phone-avatar-placeholder">G</div>
+            <div class="phone-info">
+              <h3>Google Pixel 7 Pro (128GB)</h3>
+              <p class="phone-specs">Hazel &bull; 89% Battery Health &bull; Google Fi/Unlocked</p>
+              <div class="price-row">
+                <span class="promo-price">$419</span>
+                <span class="retail-price">$899</span>
+              </div>
+              <button class="btn btn-primary btn-sm deal-inquire-trigger" data-phone="Google Pixel 7 Pro">Check Availability</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="phone-card" data-brand="apple">
+            <div class="phone-badge">Like New</div>
+            <div class="phone-avatar-placeholder"></div>
+            <div class="phone-info">
+              <h3>iPhone 13 Pro (128GB)</h3>
+              <p class="phone-specs">Sierra Blue &bull; 90% Battery Health &bull; Unlocked</p>
+              <div class="price-row">
+                <span class="promo-price">$549</span>
+                <span class="retail-price">$999</span>
+              </div>
+              <button class="btn btn-primary btn-sm deal-inquire-trigger" data-phone="iPhone 13 Pro">Check Availability</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Estimator Section -->
+    <section class="estimator-section" id="estimator">
+      <div class="container estimator-container">
+        <div class="section-title text-center">
+          <h2>Repair Cost Estimator</h2>
+          <p>Select your device and repair type to get a prompt promotional pricing estimate.</p>
+        </div>
+
+        <div class="estimator-box">
+          <form class="estimator-form" id="price-calculator-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="device-brand">Device Brand</label>
+                <select id="device-brand" required>
+                  <option value="" disabled selected>Select Brand</option>
+                  <option value="apple">Apple</option>
+                  <option value="samsung">Samsung</option>
+                  <option value="google">Google</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="device-model">Device Model</label>
+                <select id="device-model" required disabled>
+                  <option value="" disabled selected>Select Brand First</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="repair-service">Issue / Repair Needed</label>
+                <select id="repair-service" required>
+                  <option value="" disabled selected>Select Issue</option>
+                  <option value="screen" data-coef="1.5">Cracked Screen Replacement</option>
+                  <option value="battery" data-coef="0.6">Battery Replacement / Drain</option>
+                  <option value="port" data-coef="0.7">Charging Port Malfunction</option>
+                  <option value="camera" data-coef="1.0">Back Camera Lens Repair</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Price Output Panel -->
+            <div class="estimate-result-panel hidden" id="result-display-panel">
+              <div class="estimate-label">Estimated Service Cost</div>
+              <div class="estimate-value" id="calculated-price">$0</div>
+              <p class="estimate-notes">Includes certified parts, professional labor, and 90 days warranty.</p>
+              
+              <!-- Lead Booking fields -->
+              <div class="lead-fields" style="margin-top: 24px; padding-top: 24px; border-top: 1px dashed rgba(255,255,255,0.15)">
+                <h4 style="margin-bottom: 12px; font-weight: 600">Reserve an Appointment Slot</h4>
+                <div class="form-grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="form-group">
+                    <label for="client-name">Full Name</label>
+                    <input type="text" id="client-name" placeholder="Johnathan Doe">
+                  </div>
+                  <div class="form-group">
+                    <label for="client-phone">Contact Number</label>
+                    <input type="tel" id="client-phone" placeholder="(555) 123-4567">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-accent btn-block" style="margin-top: 16px;">Confirm Appointment Slot</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tracker Section -->
+    <section class="tracker-section" id="tracker">
+      <div class="container tracker-container">
+        <div class="section-title text-center">
+          <h2>Repair Status Tracker</h2>
+          <p>Entered your ticket ID to check where your phone is in our engineering queue.</p>
+        </div>
+
+        <div class="tracker-box">
+          <div class="tracker-input-row">
+            <input type="text" id="ticket-id-input" placeholder="Enter Ticket ID (e.g. REP1024)">
+            <button class="btn btn-primary" id="btn-track-ticket">Search Ticket</button>
+          </div>
+          
+          <div class="tracker-result-wrapper hidden" id="tracker-result-box">
+            <!-- Rendered by JS -->
+          </div>
+          <p class="tracker-tip">Don't have a ticket ID? Check your receipt or phone text messages.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+          <span>ElectroFix</span>
+        </a>
+        <p>Providing premium mobile sales and reliable, certified mobile hardware repairs since 2018.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Store Hours</h4>
+        <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Location</h4>
+        <p>128 Tech Boulevard, Suite A</p>
+        <p>support@electrofixrepair.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 ElectroFix Sales & Repairs. All rights reserved. (Marketing Prototype Only)</p>
+        <div class="legal">
+          <a href="#">Repair Terms</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Purchase Check Availability -->
+  <div class="modal" id="catalog-modal">
+    <div class="modal-overlay" id="catalog-modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="catalog-modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="catalog-modal-body">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

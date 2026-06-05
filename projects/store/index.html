@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Saravana Maligai Store | ஸ்ரீ சரவணா மளிகைக் கடை</title>
+  <meta name="description" content="Welcome to Sri Saravana Maligai Store. Browse our high-quality rice, organic dals, premium spices, and household provisions. Build your shopping list and order via WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-flex">
+      <span>📍 Local Shop Delivery &bull; Doorstep Delivery Available &bull; கதவுக்கே விநியோகம்!</span>
+      <a href="tel:+919876543210" class="phone-link">📞 Call: +91 98765 43210</a>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="header" id="navbar">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-tamil">ஸ்ரீ சரவணா</div>
+        <div class="logo-english">SARAVANA MALIGAI</div>
+      </a>
+
+      <!-- Search Bar in Header -->
+      <div class="search-wrapper">
+        <input type="text" id="grocery-search-input" placeholder="Search provisions... (e.g. Rice, பருப்பு, Spices)">
+        <span class="search-icon">🔍</span>
+      </div>
+
+      <button class="cart-trigger-btn" id="cart-drawer-trigger" aria-label="Open Shopping Checklist">
+        <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <span class="cart-badge" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid container">
+        <div class="hero-content">
+          <span class="hero-badge">QUALITY PROVISIONS • தரமான மளிகைப் பொருட்கள்</span>
+          <h1>Fresh Groceries Delivered Directly to Your Home</h1>
+          <h2 class="hero-tamil-sub">உங்கள் இல்லத்திற்கே தேடி வரும் உயர்தர மளிகை பொருட்கள்!</h2>
+          <p class="hero-desc">Skip the queues. Build your custom monthly grocery list below, select required weights, and send it directly to our store over WhatsApp. We prepare, pack, and ship directly to you.</p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-green">Start List Builder / கடைக்குச் செல்ல</a>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <div class="organic-seal">
+            <div class="seal-inner">
+              <span>100%</span>
+              <p>Pure & Fresh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        
+        <!-- Filter Tabs -->
+        <div class="filter-row">
+          <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Items / அனைத்தும்</button>
+            <button class="tab-btn" data-category="grains">Rice & Grains / அரிசி & தானியங்கள்</button>
+            <button class="tab-btn" data-category="dals">Dals & Pulses / பருப்பு வகைகள்</button>
+            <button class="tab-btn" data-category="spices">Spices & Oils / மசாலா & எண்ணெய்</button>
+          </div>
+        </div>
+
+        <div class="catalog-grid" id="product-grid">
+          <!-- Grains 1 -->
+          <div class="product-card" data-category="grains">
+            <div class="product-visual">🌾</div>
+            <div class="product-details">
+              <h3>Ponni Rice / பொன்னி அரிசி</h3>
+              <p class="product-desc">Super quality raw ponni rice, aged 1 year. Ideal for daily cooking.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹65 <span class="unit">/ Kg</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="ponni-rice" data-name="Ponni Rice (பொன்னி அரிசி)">Add to List</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grains 2 -->
+          <div class="product-card" data-category="grains">
+            <div class="product-visual">🌾</div>
+            <div class="product-details">
+              <h3>Idly Rice / இட்லி அரிசி</h3>
+              <p class="product-desc">Round premium idly rice. Perfect for soft idlies and crispy dosas.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹52 <span class="unit">/ Kg</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="idly-rice" data-name="Idly Rice (இட்லி அரிசி)">Add to List</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dals 1 -->
+          <div class="product-card" data-category="dals">
+            <div class="product-visual">🥜</div>
+            <div class="product-details">
+              <h3>Toor Dal / துவரம் பருப்பு</h3>
+              <p class="product-desc">First quality polished toor dal. Rich in protein, ideal for Sambar.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹160 <span class="unit">/ Kg</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="toor-dal" data-name="Toor Dal (துவரம் பருப்பு)">Add to List</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dals 2 -->
+          <div class="product-card" data-category="dals">
+            <div class="product-visual">🥜</div>
+            <div class="product-details">
+              <h3>Urad Dal / உளுத்தம் பருப்பு</h3>
+              <p class="product-desc">Premium whole white urad dal. Excellent batter consistency.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹145 <span class="unit">/ Kg</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="urad-dal" data-name="Urad Dal (உளுத்தம் பருப்பு)">Add to List</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spices 1 -->
+          <div class="product-card" data-category="spices">
+            <div class="product-visual">🌶️</div>
+            <div class="product-details">
+              <h3>Mustard Seeds / கடுகு</h3>
+              <p class="product-desc">Organic bold mustard seeds for essential tempering and aroma.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹28 <span class="unit">/ 250g</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="mustard-seeds" data-name="Mustard Seeds (கடுகு)">Add to List</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spices 2 -->
+          <div class="product-card" data-category="spices">
+            <div class="product-visual">🟡</div>
+            <div class="product-details">
+              <h3>Turmeric Powder / மஞ்சள் தூள்</h3>
+              <p class="product-desc">Pure organic ground turmeric root. Healthy antiseptic culinary grade.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹45 <span class="unit">/ 200g</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="turmeric-powder" data-name="Turmeric Powder (மஞ்சள் தூள்)">Add to List</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spices 3 -->
+          <div class="product-card" data-category="spices">
+            <div class="product-visual">🧴</div>
+            <div class="product-details">
+              <h3>Gingelly Oil / நல்லெண்ணெய்</h3>
+              <p class="product-desc">Pure cold-pressed sesame oil. Fragrant and authentic health grade.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹290 <span class="unit">/ Litre</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="gingelly-oil" data-name="Gingelly Oil (நல்லெண்ணெய்)">Add to List</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spices 4 -->
+          <div class="product-card" data-category="spices">
+            <div class="product-visual">🧴</div>
+            <div class="product-details">
+              <h3>Coconut Oil / தேங்காய் எண்ணெய்</h3>
+              <p class="product-desc">Double filtered pure coconut oil. Ideal for hair care and cooking.</p>
+              <div class="product-price-row">
+                <span class="product-price">₹210 <span class="unit">/ Litre</span></span>
+              </div>
+              <div class="list-action-row">
+                <button class="btn btn-orange btn-sm add-to-list-btn" data-id="coconut-oil" data-name="Coconut Oil (தேங்காய் எண்ணெய்)">Add to List</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sliding Shopping List Cart Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay-bg"></div>
+  
+  <div class="cart-drawer" id="cart-drawer-panel">
+    <div class="drawer-header">
+      <h3>Your Provision List / மளிகைப் பட்டியல்</h3>
+      <button class="close-drawer-btn" id="cart-drawer-close">&times;</button>
+    </div>
+    
+    <div class="drawer-content">
+      <div class="empty-cart-message" id="empty-list-notice">
+        <svg viewBox="0 0 24 24" width="60" height="60" stroke="#888888" stroke-width="1.5" fill="none" style="margin-bottom: 16px;">
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <p>Your checklist is empty.</p>
+        <p class="tamil-tip">பட்டியல் காலியாக உள்ளது. பொருட்களை சேர்க்கவும்.</p>
+      </div>
+
+      <ul class="cart-items-list" id="cart-list-items">
+        <!-- Rendered dynamically by script.js -->
+      </ul>
+    </div>
+
+    <div class="drawer-footer hidden" id="cart-drawer-footer">
+      <div class="order-notes-wrapper">
+        <label for="order-notes">Delivery Address / இதர தேவைகள்</label>
+        <textarea id="order-notes" rows="2" placeholder="Enter delivery address or additional items..."></textarea>
+      </div>
+      <button class="btn btn-green btn-block whatsapp-btn" id="btn-whatsapp-checkout">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 8px;">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.37 5.378 0 12.022 0c3.218.001 6.243 1.253 8.516 3.529 2.273 2.276 3.522 5.303 3.521 8.522-.003 6.653-5.378 12.023-12.022 12.023-2.002-.001-3.968-.5-5.759-1.45L0 24zm6.59-4.846c1.6.95 2.766 1.487 4.887 1.488 5.485 0 9.948-4.464 9.95-9.95.001-2.659-1.03-5.158-2.903-7.03C16.71 1.83 14.214.8 11.554.8 6.069.8 1.607 5.264 1.605 10.748c0 2.234.593 3.992 1.557 5.659l-.994 3.63 3.76-.986z"/>
+        </svg>
+        Send List via WhatsApp / ஆர்டர் செய்க
+      </button>
+      <button class="btn btn-orange btn-block" id="btn-copy-list" style="margin-top: 10px;">
+        Copy Shopping List to Clipboard
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-tamil">ஸ்ரீ சரவணா</div>
+        <div class="logo-english">SARAVANA MALIGAI</div>
+        <p>Premium grocery supplies, freshly packed and delivered to your doorstep since 1994.</p>
+      </div>
+      <div class="footer-hours">
+        <h4>SHOP TIMINGS / கடை நேரம்</h4>
+        <p>All Days: 7:30 AM - 9:30 PM</p>
+        <p>Sunday Delivery Available</p>
+      </div>
+      <div class="footer-contact">
+        <h4>STORE LOCATION / முகவரி</h4>
+        <p>42, Bazaar Street, Near Murugan Temple,</p>
+        <p>Tamil Nadu, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Sri Saravana Maligai Store. (Marketing Prototype Only)</p>
+        <div class="legal">
+          <a href="#">Shop Policies</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

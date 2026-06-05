@@ -25,7 +25,7 @@
         <div class="nav-container">
             <a href="#" class="logo">
                 <span class="logo-icon"><i data-lucide="sparkles"></i></span>
-                JSVSites<span class="logo-accent">.com</span>
+                jsvsites<span class="logo-accent">.com</span>
             </a>
             
             <nav class="nav-menu" id="navMenu">
@@ -218,129 +218,219 @@
             <!-- Filters -->
             <div class="showcase-filters">
                 <button class="filter-btn active" data-filter="all">All Models</button>
-                <button class="filter-btn" data-filter="food">Food & Cafe</button>
-                <button class="filter-btn" data-filter="retail">Retail & Stores</button>
                 <button class="filter-btn" data-filter="services">Services & Booking</button>
+                <button class="filter-btn" data-filter="retail">Retail & Stores</button>
+                <button class="filter-btn" data-filter="corporate">Corporate & Tech</button>
             </div>
             
             <div class="showcase-grid" id="showcaseGrid">
                 
-                <!-- Model 1: BakeHouse -->
-                <div class="model-card" data-category="food">
-                    <div class="model-badge">Food & Cafe</div>
-                    <div class="model-visual cafe-visual">
-                        <img src="images/bakehouse.png" alt="BakeHouse Model" class="model-img" onerror="this.style.display='none'">
+                <!-- Model 1: Aura Resort & Spa -->
+                <div class="model-card" data-category="services">
+                    <div class="model-badge">Services & Booking</div>
+                    <div class="model-visual hotel-visual">
+                        <img src="projects/hotel/preview.png" alt="Aura Resort & Spa" class="model-img" onerror="this.style.display='none'">
                         <div class="visual-inner">
-                            <span class="visual-logo">🥐 BakeHouse</span>
+                            <span class="visual-logo">✨ AURA RESORT</span>
                             <div class="visual-ui">
-                                <div class="visual-row font-sm">Today's Specials</div>
-                                <div class="visual-row grid-2">
-                                    <span class="visual-box">Choco Muffin</span>
-                                    <span class="visual-box">Caffe Latte</span>
+                                <div class="visual-row font-sm">Luxury Ocean Suites</div>
+                                <div class="visual-row flex-between">
+                                    <span>Lagoon Villa</span>
+                                    <span class="visual-btn-small">Book Stay</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="model-info">
-                        <h3>BakeHouse Model</h3>
-                        <p>Perfect for bakeries, coffee shops, and restaurants. Features visual menus, booking requests, and social links.</p>
+                        <h3>Aura Resort & Spa</h3>
+                        <p>Luxury resort and hotel sanctuary page. Features high-end room booking showcase, Michelin-starred fine dining menu tabs, and a sleek reservation form.</p>
                         <div class="model-features">
-                            <span><i data-lucide="book-open"></i> Visual Menu</span>
-                            <span><i data-lucide="calendar"></i> Booking Ready</span>
+                            <span><i data-lucide="map-pin"></i> Luxury Retreat</span>
+                            <span><i data-lucide="calendar"></i> Room Booking</span>
                         </div>
                         <div class="model-actions">
-                            <button class="btn btn-secondary btn-sm preview-btn" data-model="bakehouse">Preview Model</button>
-                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="BakeHouse Model">Choose Model</button>
+                            <button class="btn btn-secondary btn-sm preview-btn" data-model="hotel" data-model-title="Aura Resort & Spa">Preview Model</button>
+                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="Aura Resort & Spa">Choose Model</button>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Model 2: FreshCart -->
+
+                <!-- Model 2: Luxe Hair Studio -->
+                <div class="model-card" data-category="services">
+                    <div class="model-badge">Services & Booking</div>
+                    <div class="model-visual saloon-visual">
+                        <img src="projects/saloon/preview.png" alt="Luxe Hair Studio" class="model-img" onerror="this.style.display='none'">
+                        <div class="visual-inner">
+                            <span class="visual-logo">💇‍♀️ LUXE HAIR</span>
+                            <div class="visual-ui">
+                                <div class="visual-row font-sm">Premium Grooming Menu</div>
+                                <div class="visual-row flex-between">
+                                    <span>Signature Cut</span>
+                                    <span class="visual-btn-small">Book Slot</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Luxe Hair Studio</h3>
+                        <p>Upscale hair salon and grooming lounge template. Features direct appointment slot booking, service pricing tiers, and client testimonial sliders.</p>
+                        <div class="model-features">
+                            <span><i data-lucide="scissors"></i> Styling Menu</span>
+                            <span><i data-lucide="clock"></i> Booking Slots</span>
+                        </div>
+                        <div class="model-actions">
+                            <button class="btn btn-secondary btn-sm preview-btn" data-model="saloon" data-model-title="Luxe Hair Studio">Preview Model</button>
+                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="Luxe Hair Studio">Choose Model</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 3: ListKing -->
+                <div class="model-card" data-category="services">
+                    <div class="model-badge">Services & Booking</div>
+                    <div class="model-visual listking-visual">
+                        <img src="projects/listking/preview.png" alt="ListKing" class="model-img" onerror="this.style.display='none'">
+                        <div class="visual-inner">
+                            <span class="visual-logo">👑 LISTKING</span>
+                            <div class="visual-ui">
+                                <div class="visual-row font-sm">Weekly Grocery List</div>
+                                <div class="visual-row flex-between">
+                                    <span>Dynamic Totals</span>
+                                    <span class="visual-btn-small">Get Bill</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>ListKing Utility</h3>
+                        <p>Smart shopping list and bill maker. Features instant item additions, quantity and price calculations, and receipt generator for easy checkouts.</p>
+                        <div class="model-features">
+                            <span><i data-lucide="check-square"></i> Smart List</span>
+                            <span><i data-lucide="credit-card"></i> Bill Generator</span>
+                        </div>
+                        <div class="model-actions">
+                            <button class="btn btn-secondary btn-sm preview-btn" data-model="listking" data-model-title="ListKing Utility">Preview Model</button>
+                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="ListKing Utility">Choose Model</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 4: Sri Saravana Store -->
                 <div class="model-card" data-category="retail">
                     <div class="model-badge">Retail & Stores</div>
                     <div class="model-visual store-visual">
-                        <img src="images/freshcart.png" alt="FreshCart Model" class="model-img" onerror="this.style.display='none'">
+                        <img src="projects/store/preview.png" alt="Sri Saravana Store" class="model-img" onerror="this.style.display='none'">
                         <div class="visual-inner">
-                            <span class="visual-logo">🛒 FreshCart</span>
+                            <span class="visual-logo">🛒 SARAVANA STORE</span>
                             <div class="visual-ui">
-                                <div class="visual-row font-sm">Your Grocery Basket</div>
+                                <div class="visual-row font-sm">Grocery Provisions Catalog</div>
                                 <div class="visual-row flex-between">
-                                    <span>Organic Apples x 5</span>
-                                    <span>$4.50</span>
+                                    <span>Fresh Apples x5</span>
+                                    <span class="visual-btn-small">Order on WA</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="model-info">
-                        <h3>FreshCart Model</h3>
-                        <p>Designed for local grocers, boutiques, and pharmacies. Quick catalog, adding to cart, and direct WhatsApp checkout.</p>
+                        <h3>Sri Saravana Store</h3>
+                        <p>Local provision and grocery shop template. Features product categories with catalog lists, cart counters, and WhatsApp checkout integration.</p>
                         <div class="model-features">
-                            <span><i data-lucide="shopping-cart"></i> WhatsApp Checkout</span>
-                            <span><i data-lucide="tag"></i> Product Catalog</span>
+                            <span><i data-lucide="shopping-basket"></i> Provisions Catalog</span>
+                            <span><i data-lucide="message-square"></i> WA Checkout</span>
                         </div>
                         <div class="model-actions">
-                            <button class="btn btn-secondary btn-sm preview-btn" data-model="freshcart">Preview Model</button>
-                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="FreshCart Model">Choose Model</button>
+                            <button class="btn btn-secondary btn-sm preview-btn" data-model="store" data-model-title="Sri Saravana Store">Preview Model</button>
+                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="Sri Saravana Store">Choose Model</button>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Model 3: FitLife -->
-                <div class="model-card" data-category="services">
-                    <div class="model-badge">Services & Booking</div>
-                    <div class="model-visual gym-visual">
-                        <img src="images/fitlife.png" alt="FitLife Model" class="model-img" onerror="this.style.display='none'">
+
+                <!-- Model 5: ElectroFix -->
+                <div class="model-card" data-category="retail">
+                    <div class="model-badge">Retail & Stores</div>
+                    <div class="model-visual mobile-visual">
+                        <img src="projects/mobile/preview.png" alt="ElectroFix Store" class="model-img" onerror="this.style.display='none'">
                         <div class="visual-inner">
-                            <span class="visual-logo">💪 FitLife Gym</span>
+                            <span class="visual-logo">📱 ELECTROFIX</span>
                             <div class="visual-ui">
-                                <div class="visual-row font-sm">Choose Your Plan</div>
-                                <div class="visual-row grid-2">
-                                    <span class="visual-box-highlight">Monthly Pass</span>
-                                    <span class="visual-box">Personal Training</span>
+                                <div class="visual-row font-sm">Certified Pre-Owned Phones</div>
+                                <div class="visual-row flex-between">
+                                    <span>iPhone 13 - Like New</span>
+                                    <span class="visual-btn-small">Quote Repair</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="model-info">
-                        <h3>FitLife Model</h3>
-                        <p>Excellent for personal trainers, yoga studios, and gyms. Showcase schedules, price tiers, and testimonial loops.</p>
+                        <h3>ElectroFix Mobile Shop</h3>
+                        <p>Certified pre-owned smartphone sales & expert repair shop template. Features device specs, pricing catalog, and instant repair booking forms.</p>
                         <div class="model-features">
-                            <span><i data-lucide="award"></i> Pricing Tables</span>
-                            <span><i data-lucide="users"></i> Trainer Profiles</span>
+                            <span><i data-lucide="smartphone"></i> Phone Catalog</span>
+                            <span><i data-lucide="wrench"></i> Repair Services</span>
                         </div>
                         <div class="model-actions">
-                            <button class="btn btn-secondary btn-sm preview-btn" data-model="fitlife">Preview Model</button>
-                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="FitLife Model">Choose Model</button>
+                            <button class="btn btn-secondary btn-sm preview-btn" data-model="mobile" data-model-title="ElectroFix Mobile Shop">Preview Model</button>
+                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="ElectroFix Mobile Shop">Choose Model</button>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Model 4: UrbanSalon -->
-                <div class="model-card" data-category="services">
-                    <div class="model-badge">Services & Booking</div>
-                    <div class="model-visual salon-visual">
-                        <img src="images/urbansalon.png" alt="UrbanSalon Model" class="model-img" onerror="this.style.display='none'">
+
+                <!-- Model 6: EduQuest Academy -->
+                <div class="model-card" data-category="corporate">
+                    <div class="model-badge">Corporate & Tech</div>
+                    <div class="model-visual education-visual">
+                        <img src="projects/education/preview.png" alt="EduQuest Academy" class="model-img" onerror="this.style.display='none'">
                         <div class="visual-inner">
-                            <span class="visual-logo">💇‍♀️ UrbanSalon</span>
+                            <span class="visual-logo">🎓 EDUQUEST</span>
                             <div class="visual-ui">
-                                <div class="visual-row font-sm">Book Stylist</div>
+                                <div class="visual-row font-sm">Tech & Business Curriculum</div>
                                 <div class="visual-row flex-between">
-                                    <span>Hair Styling</span>
-                                    <span class="visual-btn-small">Book 2:00 PM</span>
+                                    <span>Learn Web Dev</span>
+                                    <span class="visual-btn-small">Enroll</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="model-info">
-                        <h3>UrbanSalon Model</h3>
-                        <p>Optimized for barbershops, hair salons, nail spas, and therapists. Direct appointment slots and booking capabilities.</p>
+                        <h3>EduQuest Academy</h3>
+                        <p>Premium courses portal for tech and coding education. Features curriculum grid listings, student testimonial loops, and program enrollments.</p>
                         <div class="model-features">
-                            <span><i data-lucide="clock"></i> Booking Form</span>
-                            <span><i data-lucide="image"></i> Gallery Showcase</span>
+                            <span><i data-lucide="book-open"></i> Curated Courses</span>
+                            <span><i data-lucide="graduation-cap"></i> Certifications</span>
                         </div>
                         <div class="model-actions">
-                            <button class="btn btn-secondary btn-sm preview-btn" data-model="urbansalon">Preview Model</button>
-                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="UrbanSalon Model">Choose Model</button>
+                            <button class="btn btn-secondary btn-sm preview-btn" data-model="education" data-model-title="EduQuest Academy">Preview Model</button>
+                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="EduQuest Academy">Choose Model</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model 7: Apex Consulting -->
+                <div class="model-card" data-category="corporate">
+                    <div class="model-badge">Corporate & Tech</div>
+                    <div class="model-visual company-visual">
+                        <img src="projects/company/preview.png" alt="Apex Consulting" class="model-img" onerror="this.style.display='none'">
+                        <div class="visual-inner">
+                            <span class="visual-logo">📈 APEX ADVISORS</span>
+                            <div class="visual-ui">
+                                <div class="visual-row font-sm">Corporate Strategy & Logistics</div>
+                                <div class="visual-row flex-between">
+                                    <span>Operations Consulting</span>
+                                    <span class="visual-btn-small">Consult Us</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-info">
+                        <h3>Apex Consulting</h3>
+                        <p>Premium strategy consulting and enterprise logistics firm template. Features service matrices, project stats, and corporate scheduling triggers.</p>
+                        <div class="model-features">
+                            <span><i data-lucide="trending-up"></i> Growth Strategy</span>
+                            <span><i data-lucide="truck"></i> Logistics Planning</span>
+                        </div>
+                        <div class="model-actions">
+                            <button class="btn btn-secondary btn-sm preview-btn" data-model="company" data-model-title="Apex Consulting">Preview Model</button>
+                            <button class="btn btn-primary btn-sm select-model-btn" data-model-name="Apex Consulting">Choose Model</button>
                         </div>
                     </div>
                 </div>
@@ -445,10 +535,13 @@
                                 <label for="selected-model">Selected Model Pattern</label>
                                 <select id="selected-model">
                                     <option value="None / Custom Design">None / Custom Design</option>
-                                    <option value="BakeHouse Model">BakeHouse Model (Cafe)</option>
-                                    <option value="FreshCart Model">FreshCart Model (Grocery/Retail)</option>
-                                    <option value="FitLife Model">FitLife Model (Gym/Fitness)</option>
-                                    <option value="UrbanSalon Model">UrbanSalon Model (Booking/Beauty)</option>
+                                    <option value="Aura Resort & Spa">Aura Resort & Spa (Hotel)</option>
+                                    <option value="Luxe Hair Studio">Luxe Hair Studio (Saloon)</option>
+                                    <option value="EduQuest Academy">EduQuest Academy (Courses)</option>
+                                    <option value="Apex Consulting">Apex Consulting (Corporate)</option>
+                                    <option value="Sri Saravana Store">Sri Saravana Store (Grocery)</option>
+                                    <option value="ElectroFix Mobile Shop">ElectroFix Mobile Shop (Mobile & Repair)</option>
+                                    <option value="ListKing Utility">ListKing Utility (Shopping List)</option>
                                 </select>
                             </div>
                         </div>
@@ -482,7 +575,7 @@
                 <div class="footer-brand">
                     <a href="#" class="logo">
                         <span class="logo-icon"><i data-lucide="sparkles"></i></span>
-                        JSVSites<span class="logo-accent">.com</span>
+                        jsvsites<span class="logo-accent">.com</span>
                     </a>
                     <p>Building gorgeous, high-performing websites and Android apps that help small businesses stand out.</p>
                 </div>

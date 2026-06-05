@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Resort & Spa | Luxury Sanctuary & Fine Dining</title>
+  <meta name="description" content="Immerse yourself in Aura Resort & Spa. Indulge in bespoke ocean suites, award-winning spa treatments, and Michelin-starred dining at The Gold Leaf.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="aura-logo">
+        <span class="logo-serif">AURA</span>
+        <span class="logo-sub">RESORT & SPA</span>
+      </a>
+
+      <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="navigation-menu">
+        <a href="#hero" class="nav-link active">The Sanctuary</a>
+        <a href="#suites" class="nav-link">Suites</a>
+        <a href="#dining" class="nav-link">The Gold Leaf Restaurant</a>
+        <a href="#spa" class="nav-link">Wellness</a>
+        <a href="#reserve" class="nav-cta" id="nav-reserve-btn">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-backdrop"></div>
+      <div class="container hero-grid">
+        <div class="hero-intro">
+          <span class="hero-tag">A HAVEN OF TRANQUILITY</span>
+          <h1 class="hero-title">Where Serenity Meets Refined Opulence</h1>
+          <p class="hero-desc">Nestled on pristine shores, Aura offers an sanctuary of bespoke luxury, restorative wellness, and epicurean artistry designed to rejuvenate the soul.</p>
+          <div class="hero-actions">
+            <a href="#suites" class="btn btn-gold" id="btn-explore-suites">Discover Suites</a>
+            <a href="#dining" class="btn btn-outline" id="btn-explore-dining">View Fine Dining</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-border">
+            <div class="hotel-shield">
+              <svg viewBox="0 0 100 100" class="shield-svg">
+                <path d="M50 5 L85 20 V60 C85 80 50 95 50 95 C50 95 15 80 15 60 V20 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <text x="50" y="55" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" text-anchor="middle" fill="currentColor">A</text>
+              </svg>
+              <h3>Est. 2012</h3>
+              <p>Five-Star Diamond Award</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suites Section -->
+    <section class="suites" id="suites">
+      <div class="container">
+        <div class="section-heading">
+          <span class="gold-subtitle">LUXURY LIVING</span>
+          <h2>Bespoke Private Residences & Suites</h2>
+          <p>Each villa offers panoramic ocean views, private infinity pools, and round-the-clock butler service.</p>
+        </div>
+
+        <div class="suites-grid">
+          <!-- Suite 1 -->
+          <div class="suite-card" id="suite-deluxe">
+            <div class="suite-img-placeholder">
+              <span class="suite-initial">DS</span>
+            </div>
+            <div class="suite-info">
+              <h3>Deluxe Ocean Suite</h3>
+              <p>An elegant open-plan haven with sweeping terrace access, marbled rain shower, and pristine coastal vistas.</p>
+              <div class="suite-amenities">
+                <span>📐 85 m²</span>
+                <span>🌊 Ocean View</span>
+                <span>🏊 Private Pool</span>
+              </div>
+              <div class="suite-action">
+                <span class="price-indicator">From $650 / Night</span>
+                <button class="btn-text-gold view-suite-trigger" data-suite="Deluxe Ocean Suite">View Details &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Suite 2 -->
+          <div class="suite-card" id="suite-panorama">
+            <div class="suite-img-placeholder">
+              <span class="suite-initial">PS</span>
+            </div>
+            <div class="suite-info">
+              <h3>Panorama Lagoon Villa</h3>
+              <p>Suspended over crystalline water with glass floor observation portals and an expansive teak dining deck.</p>
+              <div class="suite-amenities">
+                <span>📐 120 m²</span>
+                <span>🏝️ Lagoon View</span>
+                <span>🏊 Infinity Pool</span>
+              </div>
+              <div class="suite-action">
+                <span class="price-indicator">From $950 / Night</span>
+                <button class="btn-text-gold view-suite-trigger" data-suite="Panorama Lagoon Villa">View Details &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Suite 3 -->
+          <div class="suite-card" id="suite-presidential">
+            <div class="suite-img-placeholder">
+              <span class="suite-initial">IS</span>
+            </div>
+            <div class="suite-info">
+              <h3>Imperial Sanctuary Penthouse</h3>
+              <p>The ultimate sky-residence featuring dual master bedrooms, curated art gallery, private helipad, and personal chef.</p>
+              <div class="suite-amenities">
+                <span>📐 280 m²</span>
+                <span>🌅 360° Coastal View</span>
+                <span>🏊 Rooftop Pool</span>
+              </div>
+              <div class="suite-action">
+                <span class="price-indicator">From $2,200 / Night</span>
+                <button class="btn-text-gold view-suite-trigger" data-suite="Imperial Sanctuary Penthouse">View Details &rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dining Section (The Gold Leaf Restaurant) -->
+    <section class="dining" id="dining">
+      <div class="container">
+        <div class="dining-split">
+          <div class="dining-desc-panel">
+            <span class="gold-subtitle">MICHELIN-STARRED GASTRONOMY</span>
+            <h2>The Gold Leaf Restaurant</h2>
+            <p>Led by Chef de Cuisine Antoine Laurent, The Gold Leaf pairs heritage French technique with local organic spices and ocean catches. Indulge in an atmosphere of acoustic harp play, soft candlelight, and golden accents.</p>
+            
+            <div class="menu-selector-tabs">
+              <button class="menu-tab active" data-menu="dinner" id="menu-dinner-tab">Dinner Service</button>
+              <button class="menu-tab" data-menu="breakfast" id="menu-breakfast-tab">Petit Déjeuner</button>
+              <button class="menu-tab" data-menu="cellar" id="menu-cellar-tab">Whiskey & Wine</button>
+            </div>
+          </div>
+
+          <div class="dining-menu-panel">
+            <div class="menu-content active" id="menu-dinner">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h4>Saffron Lobster Bisque</h4>
+                  <span class="menu-price">$28</span>
+                </div>
+                <p>Poached blue lobster tails, fennel cream, shaved gold leaf garnish.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h4>Pan-Seared Line Caught Seabass</h4>
+                  <span class="menu-price">$48</span>
+                </div>
+                <p>Wild mushrooms, lemongrass-infused olive emulsion, roasted asparagus.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h4>A5 Miyazaki Wagyu Fillet</h4>
+                  <span class="menu-price">$85</span>
+                </div>
+                <p>Smoked truffle purée, visual glaze, roasted organic shallots.</p>
+              </div>
+            </div>
+
+            <div class="menu-content" id="menu-breakfast">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h4>Aura Pastry Basket</h4>
+                  <span class="menu-price">$16</span>
+                </div>
+                <p>Flaky butter croissants, pain au chocolat, wild berry jam, house churned butter.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h4>Truffled Eggs Benedict</h4>
+                  <span class="menu-price">$26</span>
+                </div>
+                <p>Organic poached eggs, artisanal smoked salmon, truffle hollandaise, toasted brioche.</p>
+              </div>
+            </div>
+
+            <div class="menu-content" id="menu-cellar">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h4>Dom Pérignon Vintage, 2012</h4>
+                  <span class="menu-price">$75 / Glass</span>
+                </div>
+                <p>Rich and expressive with toasted brioche, pear, and limestone minerals.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h4>Aura Smoked Old Fashioned</h4>
+                  <span class="menu-price">$24</span>
+                </div>
+                <p>Bespoke oak-aged single malt whiskey, organic saffron syrup, angostura bitters, orange peel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wellness & Spa Section -->
+    <section class="spa" id="spa">
+      <div class="container spa-grid">
+        <div class="spa-visual">
+          <div class="spa-ornament">
+            <span>Wellness Rituals</span>
+          </div>
+        </div>
+        <div class="spa-content">
+          <span class="gold-subtitle">RESTORATIVE WELLNESS</span>
+          <h2>The Aura Spa Sanctuary</h2>
+          <p>Enter a realm of pure revitalization. Our treatments integrate ancestral herbal compresses, deep muscle hot stone therapy, and bespoke facial hydration masks to unlock total physiological calm.</p>
+          <div class="spa-features">
+            <div class="spa-feat-item">
+              <strong>Hydrothermal Circuit</strong>
+              <p>Steam rooms, salt-rock saunas, and cold-plunge cascades.</p>
+            </div>
+            <div class="spa-feat-item">
+              <strong>Organic Aromatherapy</strong>
+              <p>Hand-harvested botanicals and essential floral extracts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Form Section -->
+    <section class="reserve" id="reserve">
+      <div class="container reserve-container">
+        <div class="reserve-header">
+          <h2>Secure Your Sanctuary</h2>
+          <p>Submit an inquiry to book your suites or secure a fine-dining table at The Gold Leaf. A concierge specialist will confirm your request via call.</p>
+        </div>
+
+        <div class="reserve-form-wrapper">
+          <form class="reserve-form" id="booking-inquiry-form">
+            <div class="form-tabs">
+              <button type="button" class="form-tab-btn active" data-type="room" id="tab-room-btn">Suite Booking</button>
+              <button type="button" class="form-tab-btn" data-type="table" id="tab-table-btn">Table Reservation</button>
+            </div>
+            
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="guest-name">Full Name</label>
+                <input type="text" id="guest-name" name="name" required placeholder="Alexander Mercer">
+              </div>
+
+              <div class="form-group">
+                <label for="guest-email">Email Address</label>
+                <input type="email" id="guest-email" name="email" required placeholder="alexander@mercer.com">
+              </div>
+
+              <!-- Switchable Fields: Room Section -->
+              <div class="form-row-group" id="room-fields">
+                <div class="form-group">
+                  <label for="check-in">Check In</label>
+                  <input type="date" id="check-in" name="checkin">
+                </div>
+                <div class="form-group">
+                  <label for="check-out">Check Out</label>
+                  <input type="date" id="check-out" name="checkout">
+                </div>
+                <div class="form-group">
+                  <label for="suite-selection">Suite Choice</label>
+                  <select id="suite-selection" name="suite">
+                    <option value="deluxe">Deluxe Ocean Suite</option>
+                    <option value="panorama">Panorama Lagoon Villa</option>
+                    <option value="presidential">Imperial Sanctuary Penthouse</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Switchable Fields: Table Section (Hidden by Default) -->
+              <div class="form-row-group hidden" id="table-fields">
+                <div class="form-group">
+                  <label for="booking-date">Dinner Date</label>
+                  <input type="date" id="booking-date" name="bookdate">
+                </div>
+                <div class="form-group">
+                  <label for="booking-time">Time Slot</label>
+                  <select id="booking-time" name="booktime">
+                    <option value="18:00">06:00 PM</option>
+                    <option value="19:30">07:30 PM</option>
+                    <option value="21:00">09:00 PM</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="guests-count">Guests</label>
+                  <select id="guests-count" name="guests">
+                    <option value="2">2 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="6">6+ Guests</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 20px;">
+              <label for="guest-notes">Special Requests / Preferences</label>
+              <textarea id="guest-notes" name="notes" rows="3" placeholder="Dietary restrictions, pillow preferences, airport transfer requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-block" id="btn-submit-inquiry">Send Inquiry Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-serif">AURA</span>
+          <span class="logo-sub">RESORT & SPA</span>
+        </a>
+        <p>A proud member of Preferred Hotels & Resorts Worldwide. Crafting unforgettable luxury escapes.</p>
+      </div>
+      <div class="footer-links">
+        <h4>SANCTUARY</h4>
+        <a href="#suites">Ocean Suites</a>
+        <a href="#dining">The Gold Leaf</a>
+        <a href="#spa">Hydrotherapy Spa</a>
+      </div>
+      <div class="footer-links">
+        <h4>INQUIRIES</h4>
+        <p>reservations@aura-resort.com</p>
+        <p>+1 (800) 888-AURA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Aura Luxury Resorts. All rights reserved. (Marketing Prototype Only)</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Framework</a>
+          <a href="#">Terms of Stay</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Suite Details Modal -->
+  <div class="modal" id="suite-lightbox">
+    <div class="modal-overlay" id="lightbox-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="lightbox-close" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="lightbox-content">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

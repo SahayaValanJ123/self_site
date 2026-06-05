@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Consulting | Premium Corporate Strategy & Logistics</title>
+  <meta name="description" content="Apex Consulting provides world-class corporate strategy, logistics optimization, and market intelligence to scale your business.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="site-header">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>APEX</span>
+      </a>
+      
+      <button class="nav-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navigation-bar">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#stats" class="nav-link">Results</a>
+        <a href="#team" class="nav-link">Expertise</a>
+        <a href="#contact" class="nav-cta-btn" id="nav-contact-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-accent"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-subtitle">STRATEGY • LOGISTICS • GROWTH</span>
+          <h1 class="hero-title">Empowering Global Enterprises to Scale Resiliently</h1>
+          <p class="hero-desc">We deliver bespoke consulting solutions, supply chain modernization, and actionable market analysis to turn complex challenges into competitive advantages.</p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary" id="explore-services-btn">Explore Solutions</a>
+            <a href="#contact" class="btn btn-secondary" id="schedule-call-btn">Request Strategy Session</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glass-card-wrapper">
+            <div class="glass-card" id="hero-interactive-card">
+              <div class="glass-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="window-title">System Status: Active</span>
+              </div>
+              <div class="glass-body">
+                <h3>Global Supply Pipeline</h3>
+                <div class="progress-container">
+                  <div class="progress-label">Logistics Efficiency</div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 94%;"></div></div>
+                  <span class="progress-val">94%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-label">Market Penetration</div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 87%;"></div></div>
+                  <span class="progress-val">87%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-label">Operational Growth</div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+                  <span class="progress-val">+12.4%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Offerings</span>
+          <h2>Tailored Solutions for Modern Corporate Needs</h2>
+          <p>Filter our practices below to find how we can partner with your business.</p>
+        </div>
+
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all" id="filter-all-btn">All Solutions</button>
+          <button class="filter-btn" data-filter="strategy" id="filter-strategy-btn">Corporate Strategy</button>
+          <button class="filter-btn" data-filter="logistics" id="filter-logistics-btn">Logistics & Supply</button>
+          <button class="filter-btn" data-filter="advisory" id="filter-advisory-btn">Financial Advisory</button>
+        </div>
+
+        <div class="services-grid" id="solutions-grid">
+          <!-- Card 1 -->
+          <div class="service-card" data-category="strategy">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Enterprise Strategy</h3>
+            <p>Develop robust corporate architectures and long-term expansion plans tailored for highly competitive global landscapes.</p>
+            <span class="learn-more">Learn more <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card" data-category="logistics">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Logistics Optimization</h3>
+            <p>Re-engineer freight management, global warehousing, and routing to secure maximum cost savings and zero-disruption timelines.</p>
+            <span class="learn-more">Learn more <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card" data-category="advisory">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Mergers & Acquisitions</h3>
+            <p>Navigate complex negotiations and complete corporate valuations with deep financial diligence and strategic positioning.</p>
+            <span class="learn-more">Learn more <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card" data-category="strategy">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+            </div>
+            <h3>Market Diagnostics</h3>
+            <p>Leverage cutting-edge consumer data analytics to capture emerging opportunities and preempt shifting demands.</p>
+            <span class="learn-more">Learn more <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service-card" data-category="logistics">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l-7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Supply Chain Resiliency</h3>
+            <p>Mitigate international geopolitical risks and establish reliable raw material pipelines for dynamic manufacturing pipelines.</p>
+            <span class="learn-more">Learn more <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service-card" data-category="advisory">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <h3>Cost Restructuring</h3>
+            <p>Optimize resource allocations, discover operational efficiencies, and eliminate waste without sacrificing growth momentum.</p>
+            <span class="learn-more">Learn more <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats & Achievements Section -->
+    <section class="stats-section" id="stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" id="stat-client-count">0</div>
+          <div class="stat-label">Global Clients Managed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="stat-logistics-volume">0</div>
+          <div class="stat-label">Supply Chain Volume Saved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="stat-capital-raised">0</div>
+          <div class="stat-label">M&A Transaction Capital</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="stat-roi-boost">0</div>
+          <div class="stat-label">Average Operational ROI Boost</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Partners</span>
+          <h2>Steered by Proven Industry Visionaries</h2>
+          <p>Meet the leaders driving corporate adaptation and logistics superiority worldwide.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-card" id="team-partner-1">
+            <div class="team-avatar-placeholder">
+              <span class="avatar-initials">ES</span>
+            </div>
+            <div class="team-info">
+              <h4>Eleanor Vance</h4>
+              <span class="team-title">Managing Director & Head of Strategy</span>
+              <p>Ex-McKinsey advisor with 18+ years modeling scalable corporate structures for Fortune 500 conglomerates.</p>
+            </div>
+          </div>
+          <!-- Member 2 -->
+          <div class="team-card" id="team-partner-2">
+            <div class="team-avatar-placeholder">
+              <span class="avatar-initials">MA</span>
+            </div>
+            <div class="team-info">
+              <h4>Marcus Aurelius</h4>
+              <span class="team-title">Chief Logistics Architect</span>
+              <p>International distribution expert specializing in container logistics, terminal operations, and predictive routing.</p>
+            </div>
+          </div>
+          <!-- Member 3 -->
+          <div class="team-card" id="team-partner-3">
+            <div class="team-avatar-placeholder">
+              <span class="avatar-initials">KL</span>
+            </div>
+            <div class="team-info">
+              <h4>Dr. Katherine Lang</h4>
+              <span class="team-title">Lead Financial Strategist</span>
+              <p>Oxford Scholar in Econometrics. Led cross-border integrations totaling over $6B in corporate valuation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info-panel">
+          <h2>Ready to Reshape Your Operations?</h2>
+          <p>Let's map out a strategy that works for you. Contact our advisory board to schedule a detailed diagnostic session.</p>
+          
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <h4>General Queries</h4>
+                <p>advisory@apexconsulting.com</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <h4>Direct Phone</h4>
+                <p>+1 (800) 555-APEX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <form class="contact-form" id="strategy-consultation-form">
+            <h3 class="form-title">Consultation Request</h3>
+            
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Business Email</label>
+              <input type="email" id="contact-email" name="email" required placeholder="john@enterprise.com">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-company">Company</label>
+                <input type="text" id="contact-company" name="company" placeholder="Acme Corp">
+              </div>
+              <div class="form-group">
+                <label for="contact-interest">Primary Area</label>
+                <select id="contact-interest" name="interest">
+                  <option value="strategy">Corporate Strategy</option>
+                  <option value="logistics">Logistics Optimization</option>
+                  <option value="advisory">M&A / Advisory</option>
+                  <option value="diagnostics">Full Business Diagnostic</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Operational Context</label>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Briefly describe your scaling challenges or supply bottlenecks..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Send Strategy Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <span>APEX</span>
+        </a>
+        <p>Providing premium advisory and logistics architecture since 2011.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Solutions</h4>
+        <a href="#services">Corporate Strategy</a>
+        <a href="#services">Logistics Systems</a>
+        <a href="#services">Asset Valuation</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="#team">Partners Board</a>
+        <a href="#stats">Success Track</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Apex Consulting Group. All rights reserved. (Marketing Prototype Only)</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Advisory</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Service Learn More -->
+  <div class="modal" id="service-detail-modal">
+    <div class="modal-overlay" id="modal-overlay-bg"></div>
+    <div class="modal-content-wrapper">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close details">&times;</button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

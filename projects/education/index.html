@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduQuest Academy | Premium Courses in Tech & Design</title>
+  <meta name="description" content="EduQuest Academy offers professional online bootcamps and specialized courses in coding, design, and product management to jumpstart your career.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo">
+        <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+        </svg>
+        <span>EduQuest</span>
+      </a>
+
+      <button class="menu-btn" id="mobile-menu-trigger" aria-label="Toggle Navigation Panel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="main-navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#features" class="nav-link">Why Us</a>
+        <a href="#testimonials" class="nav-link">Success Stories</a>
+        <button class="enroll-cta-btn" id="header-enroll-btn">Register Interest</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="drawer-overlay" id="menu-drawer-overlay"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <span class="badge">Accelerate Your Future</span>
+          <h1 class="hero-main-title">Master the Skills That Drive Global Innovation</h1>
+          <p class="hero-paragraph">Join 15,000+ graduates learning web development, UI/UX design, and product management from world-class industry professionals.</p>
+          <div class="hero-button-group">
+            <a href="#courses" class="btn btn-primary" id="view-courses-btn">Browse Courses</a>
+            <button class="btn btn-secondary" id="hero-register-btn">Attend Open Day</button>
+          </div>
+          <div class="hero-social-proof">
+            <div class="avatar-group">
+              <span class="circle-avatar shadow-1">A</span>
+              <span class="circle-avatar shadow-2">K</span>
+              <span class="circle-avatar shadow-3">M</span>
+            </div>
+            <p class="proof-text">⭐ <strong>4.9/5 Rating</strong> from 2,300+ students worldwide</p>
+          </div>
+        </div>
+        
+        <div class="hero-illustration-panel">
+          <div class="floating-container">
+            <div class="floating-widget card-students">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <div>
+                <h4>15K+ Active Learners</h4>
+                <p>Collaborative online labs</p>
+              </div>
+            </div>
+            <div class="floating-widget card-hours">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <h4>120+ Core Modules</h4>
+                <p>Self-paced & Guided paths</p>
+              </div>
+            </div>
+            <!-- Main visual card resembling dashboard -->
+            <div class="academy-visual-card">
+              <div class="visual-header">
+                <span class="circle-dot"></span>
+                <span>Virtual Workshop Screen</span>
+              </div>
+              <div class="visual-body">
+                <div class="code-line"><span class="keyword">const</span> <span class="var-name">quest</span> = <span class="keyword">new</span> <span class="class-name">AcademyQuest</span>();</div>
+                <div class="code-line indent-1"><span class="var-name">quest</span>.<span class="func-name">initiateLearning</span>({</div>
+                <div class="code-line indent-2"><span class="key-name">focus</span>: <span class="str-val">"practical_skills"</span>,</div>
+                <div class="code-line indent-2"><span class="key-name">mentorship</span>: <span class="var-name">true</span>,</div>
+                <div class="code-line indent-2"><span class="key-name">portfolioReady</span>: <span class="var-name">true</span></div>
+                <div class="code-line indent-1">});</div>
+                <div class="console-output">> Loading professional portfolio modules... [Success]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section" id="courses">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <h2>Explore Our Industry-Aligned Bootcamps</h2>
+          <p>Curated curriculums built with global tech firms to ensure direct employability.</p>
+        </div>
+
+        <div class="course-categories">
+          <button class="cat-btn active" data-category="all" id="btn-cat-all">All Programs</button>
+          <button class="cat-btn" data-category="coding" id="btn-cat-coding">Coding</button>
+          <button class="cat-btn" data-category="design" id="btn-cat-design">UI/UX Design</button>
+          <button class="cat-btn" data-category="product" id="btn-cat-product">Product & Data</button>
+        </div>
+
+        <div class="course-grid" id="course-cards-container">
+          <!-- Course Card 1 -->
+          <div class="course-card" data-category="coding">
+            <div class="course-tag">Full-Time Bootcamp</div>
+            <div class="course-details">
+              <h3>Full-Stack Software Engineering</h3>
+              <p>Master React, Node.js, PostgreSQL, and system design. Build, deploy, and scale robust enterprise web applications.</p>
+              <div class="course-stats">
+                <span>⏱️ 12 Weeks</span>
+                <span>🎓 120 Modules</span>
+                <span>⭐ 4.9</span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">Inquire for Pricing</span>
+                <button class="btn-card-action enroll-trigger">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div class="course-card" data-category="design">
+            <div class="course-tag">Part-Time / Flexible</div>
+            <div class="course-details">
+              <h3>Advanced UI/UX Design System</h3>
+              <p>Learn user research, interface prototyping, Figma auto-layout systems, and high-fidelity interaction design frameworks.</p>
+              <div class="course-stats">
+                <span>⏱️ 8 Weeks</span>
+                <span>🎓 80 Modules</span>
+                <span>⭐ 4.8</span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">Inquire for Pricing</span>
+                <button class="btn-card-action enroll-trigger">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div class="course-card" data-category="product">
+            <div class="course-tag">Weekend Workshop</div>
+            <div class="course-details">
+              <h3>Agile Product Management</h3>
+              <p>Fulfill product owner duties. Define backlogs, execute customer interviews, and lead cross-functional development sprints.</p>
+              <div class="course-stats">
+                <span>⏱️ 6 Weeks</span>
+                <span>🎓 45 Modules</span>
+                <span>⭐ 4.9</span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">Inquire for Pricing</span>
+                <button class="btn-card-action enroll-trigger">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 4 -->
+          <div class="course-card" data-category="coding">
+            <div class="course-tag">Self-Paced Track</div>
+            <div class="course-details">
+              <h3>Next.js & Frontend Architectures</h3>
+              <p>Dive deep into server-side rendering, static site generation, API routing, and Tailwind styling at scale.</p>
+              <div class="course-stats">
+                <span>⏱️ 5 Weeks</span>
+                <span>🎓 50 Modules</span>
+                <span>⭐ 4.7</span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">Inquire for Pricing</span>
+                <button class="btn-card-action enroll-trigger">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 5 -->
+          <div class="course-card" data-category="design">
+            <div class="course-tag">Full-Time Bootcamp</div>
+            <div class="course-details">
+              <h3>UX Research & Usability Audit</h3>
+              <p>Conduct behavioral interviews, compile user journey maps, script usability plans, and draft executive reports.</p>
+              <div class="course-stats">
+                <span>⏱️ 10 Weeks</span>
+                <span>🎓 90 Modules</span>
+                <span>⭐ 4.8</span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">Inquire for Pricing</span>
+                <button class="btn-card-action enroll-trigger">Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course Card 6 -->
+          <div class="course-card" data-category="product">
+            <div class="course-tag">Part-Time / Flexible</div>
+            <div class="course-details">
+              <h3>Data Analytics & Business Metrics</h3>
+              <p>Master SQL, database schemas, and Python analytical tools. Create charts and build predictive revenue models.</p>
+              <div class="course-stats">
+                <span>⏱️ 8 Weeks</span>
+                <span>🎓 72 Modules</span>
+                <span>⭐ 4.9</span>
+              </div>
+              <div class="course-footer">
+                <span class="course-price">Inquire for Pricing</span>
+                <button class="btn-card-action enroll-trigger">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-title-wrapper text-center">
+          <h2>Hear from Our Graduated Community</h2>
+          <p>Read about students who restructured their careers and locked in roles at leading firms.</p>
+        </div>
+
+        <div class="carousel-container">
+          <button class="carousel-arrow prev" id="carousel-prev-btn" aria-label="Previous story">&lt;</button>
+          
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="testimonial-carousel-track">
+              <!-- Story 1 -->
+              <div class="testimonial-slide active">
+                <div class="quote-symbol">“</div>
+                <p class="story-quote">"EduQuest completely altered my trajectory. I went from retail management to a Junior Frontend Engineer position in exactly four months. The mentors are incredibly patient."</p>
+                <div class="story-author">
+                  <h4>Aisha Rahman</h4>
+                  <span>Frontend Dev @ Stripe</span>
+                </div>
+              </div>
+
+              <!-- Story 2 -->
+              <div class="testimonial-slide">
+                <div class="quote-symbol">“</div>
+                <p class="story-quote">"The UI/UX syllabus is as close to professional work as you can get. Creating Figma prototypes with real user data prepared me perfectly for client presentations."</p>
+                <div class="story-author">
+                  <h4>Kevin Miller</h4>
+                  <span>Product Designer @ Canva</span>
+                </div>
+              </div>
+
+              <!-- Story 3 -->
+              <div class="testimonial-slide">
+                <div class="quote-symbol">“</div>
+                <p class="story-quote">"The Product Management course taught me how to properly handle engineer resources. I gained the vocabulary and methodology to land my dream Associate PM role."</p>
+                <div class="story-author">
+                  <h4>Meera Nair</h4>
+                  <span>Product Manager @ Spotify</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-arrow next" id="carousel-next-btn" aria-label="Next story">&gt;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Panel -->
+    <section class="cta-banner">
+      <div class="container cta-flex">
+        <div class="cta-text">
+          <h2>Ready to Begin Your Quest?</h2>
+          <p>Reserve an interest spot or consult with our course advisors to map your educational pathway.</p>
+        </div>
+        <button class="btn btn-primary btn-cta enroll-trigger" id="footer-cta-register-btn">Apply/Inquire Now</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+          </svg>
+          <span>EduQuest</span>
+        </a>
+        <p>Designing modern, practical educational structures to democratize career growth.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Bootcamps</h4>
+        <a href="#courses">Software Engineering</a>
+        <a href="#courses">UI/UX Interface Systems</a>
+        <a href="#courses">Product Operations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Academy</h4>
+        <a href="#features">Success Track</a>
+        <a href="#testimonials">Graduate Log</a>
+        <a href="#">Academic Policies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 EduQuest Academy Group. (Marketing Mockup Only)</p>
+        <div class="links">
+          <a href="#">Academic Integrity</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enrollment / Interest Inquiry Modal -->
+  <div class="modal" id="enrollment-modal">
+    <div class="modal-overlay" id="enroll-modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close-btn" id="enroll-close-btn" aria-label="Close form">&times;</button>
+      <div class="modal-form-body" id="enroll-modal-body">
+        <h3 class="modal-title">Register Interest / Apply</h3>
+        <p class="modal-subtitle">Submit details to schedule a placement interview with an academic counselor.</p>
+        
+        <form class="enrollment-form" id="enrollment-interest-form">
+          <div class="form-group-item">
+            <label for="student-name">Full Name</label>
+            <input type="text" id="student-name" required placeholder="Jane Doe">
+          </div>
+
+          <div class="form-group-item">
+            <label for="student-email">Email Address</label>
+            <input type="email" id="student-email" required placeholder="jane@example.com">
+          </div>
+
+          <div class="form-group-item">
+            <label for="student-phone">Contact Number</label>
+            <input type="tel" id="student-phone" required placeholder="+1 (555) 019-2834">
+          </div>
+
+          <div class="form-group-item">
+            <label for="course-selection">Desired Bootcamp Program</label>
+            <select id="course-selection">
+              <option value="coding">Full-Stack Software Engineering</option>
+              <option value="design">Advanced UI/UX Design System</option>
+              <option value="product">Agile Product Management</option>
+              <option value="frontend">Next.js & Frontend Architectures</option>
+              <option value="general">Undecided / Career Consulting</option>
+            </select>
+          </div>
+
+          <div class="form-group-item">
+            <label for="student-message">Why do you wish to join?</label>
+            <textarea id="student-message" rows="3" placeholder="Briefly describe your career goal or previous background..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn" id="enroll-submit-button">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

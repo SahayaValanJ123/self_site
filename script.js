@@ -82,24 +82,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const modelSelect = document.getElementById('selected-model');
     const messageTextarea = document.getElementById('message');
 
-    // 1. Choose Model button action
+    // Choose Model button action
     document.querySelectorAll('.select-model-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const modelName = btn.getAttribute('data-model-name');
             
-            // Map model to sector/service
-            if (modelName.includes('BakeHouse')) {
-                serviceSelect.value = 'Single-Page Website';
-                modelSelect.value = 'BakeHouse Model';
-            } else if (modelName.includes('FreshCart')) {
+            // Map model to service type
+            if (modelName === 'Aura Resort & Spa') {
                 serviceSelect.value = 'Multi-Page Website';
-                modelSelect.value = 'FreshCart Model';
-            } else if (modelName.includes('FitLife')) {
+                modelSelect.value = 'Aura Resort & Spa';
+            } else if (modelName === 'Luxe Hair Studio') {
                 serviceSelect.value = 'Single-Page Website';
-                modelSelect.value = 'FitLife Model';
-            } else if (modelName.includes('UrbanSalon')) {
+                modelSelect.value = 'Luxe Hair Studio';
+            } else if (modelName === 'ListKing Utility') {
+                serviceSelect.value = 'Single-Page Website';
+                modelSelect.value = 'ListKing Utility';
+            } else if (modelName === 'Sri Saravana Store') {
+                serviceSelect.value = 'Single-Page Website';
+                modelSelect.value = 'Sri Saravana Store';
+            } else if (modelName === 'ElectroFix Mobile Shop') {
                 serviceSelect.value = 'Multi-Page Website';
-                modelSelect.value = 'UrbanSalon Model';
+                modelSelect.value = 'ElectroFix Mobile Shop';
+            } else if (modelName === 'EduQuest Academy') {
+                serviceSelect.value = 'Multi-Page Website';
+                modelSelect.value = 'EduQuest Academy';
+            } else if (modelName === 'Apex Consulting') {
+                serviceSelect.value = 'Multi-Page Website';
+                modelSelect.value = 'Apex Consulting';
             }
             
             // Set message
@@ -111,199 +120,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
-
     /* --- Interactive Preview Lightbox (Model Modal) --- */
     const modalOverlay = document.getElementById('modalOverlay');
     const modalClose = document.getElementById('modalClose');
     const modalBody = document.getElementById('modalBody');
 
-    const modelPreviews = {
-        bakehouse: {
-            title: 'BakeHouse Café Model Preview',
-            theme: 'theme-cafe',
-            url: 'https://bakehouse-demo.vercel.app',
-            content: `
-                <div class="preview-nav">
-                    <span class="preview-logo">🥐 BakeHouse Café</span>
-                    <div class="preview-menu">
-                        <span>Menu</span>
-                        <span>Our Story</span>
-                        <span>Location</span>
-                    </div>
-                    <button class="preview-btn">Order Online</button>
-                </div>
-                <div class="preview-hero">
-                    <h2>Freshly Baked Treats Delivered Daily</h2>
-                    <p>Experience artisanal pastries, custom wedding cakes, and locally roasted organic coffee at our cozy boutique location.</p>
-                </div>
-                <div class="preview-grid">
-                    <div class="preview-item">
-                        <div class="preview-item-title">Almond Croissant</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Light, buttery, filled with almond paste.</p>
-                        <span class="preview-item-price">$4.50</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Organic Latte</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Double shot espresso with steamed milk.</p>
-                        <span class="preview-item-price">$3.75</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Avocado Toast</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Smashed avocado on sourdough with seeds.</p>
-                        <span class="preview-item-price">$8.50</span>
-                    </div>
-                </div>
-                <div class="preview-footer">
-                    <span>📍 128 Bakers Lane, NY</span>
-                    <span>📞 (555) 019-2834</span>
-                </div>
-            `
-        },
-        freshcart: {
-            title: 'FreshCart Grocery Model Preview',
-            theme: 'theme-store',
-            url: 'https://freshcart-store.vercel.app',
-            content: `
-                <div class="preview-nav">
-                    <span class="preview-logo">🥬 FreshCart</span>
-                    <div class="preview-menu">
-                        <span>Fruits</span>
-                        <span>Vegetables</span>
-                        <span>Grains</span>
-                    </div>
-                    <button class="preview-btn"><i data-lucide="shopping-cart"></i> Cart (2)</button>
-                </div>
-                <div class="preview-hero">
-                    <h2>Organic Groceries, Delivered to Your Doorstep</h2>
-                    <p>Order fresh produce sourced directly from local organic farms. Check out securely via WhatsApp message.</p>
-                </div>
-                <div class="preview-grid">
-                    <div class="preview-item">
-                        <div class="preview-item-title">Organic Strawberries</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Sweet, picked daily. 500g basket.</p>
-                        <span class="preview-item-price">$3.99</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Fresh Broccoli</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Farm-fresh premium greens. Per head.</p>
-                        <span class="preview-item-price">$1.89</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Whole Grain Bread</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Artisanal stoneground sourdough loaf.</p>
-                        <span class="preview-item-price">$4.25</span>
-                    </div>
-                </div>
-                <div class="preview-footer">
-                    <span>⚡ Standard 2 Hour Delivery</span>
-                    <span>💬 Checkout via WhatsApp</span>
-                </div>
-            `
-        },
-        fitlife: {
-            title: 'FitLife Gym & Wellness Model Preview',
-            theme: 'theme-gym',
-            url: 'https://fitlife-wellness.vercel.app',
-            content: `
-                <div class="preview-nav">
-                    <span class="preview-logo">🏋️‍♂️ FitLife Studio</span>
-                    <div class="preview-menu">
-                        <span>Classes</span>
-                        <span>Trainers</span>
-                        <span>Pricing</span>
-                    </div>
-                    <button class="preview-btn">Free Trial Pass</button>
-                </div>
-                <div class="preview-hero">
-                    <h2>Transform Your Mind & Body</h2>
-                    <p>High-intensity workouts, relaxing yoga flows, and customized nutritional consulting. Let's reach your goals.</p>
-                </div>
-                <div class="preview-grid">
-                    <div class="preview-item">
-                        <div class="preview-item-title">Monthly Access</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Full gym access + group classes.</p>
-                        <span class="preview-item-price">$49/mo</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Personal Coach</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">2 personal training sessions per week.</p>
-                        <span class="preview-item-price">$149/mo</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Yoga Unlimited</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Access to all yoga and pilates sessions.</p>
-                        <span class="preview-item-price">$39/mo</span>
-                    </div>
-                </div>
-                <div class="preview-footer">
-                    <span>🔥 24/7 Member Facilities</span>
-                    <span>📍 404 Strength Ave, CA</span>
-                </div>
-            `
-        },
-        urbansalon: {
-            title: 'UrbanSalon Booking Model Preview',
-            theme: 'theme-salon',
-            url: 'https://urbansalon-booking.vercel.app',
-            content: `
-                <div class="preview-nav">
-                    <span class="preview-logo">💇‍♀️ UrbanSalon</span>
-                    <div class="preview-menu">
-                        <span>Services</span>
-                        <span>Stylists</span>
-                        <span>Portfolio</span>
-                    </div>
-                    <button class="preview-btn">Book Appointment</button>
-                </div>
-                <div class="preview-hero">
-                    <h2>Unleash Your Inner Confidence</h2>
-                    <p>Premium hair styling, coloring, manicure, and spa therapies designed to make you glow. Book your styling slot today.</p>
-                </div>
-                <div class="preview-grid">
-                    <div class="preview-item">
-                        <div class="preview-item-title">Signature Haircut</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Wash, style, custom cut and blow dry.</p>
-                        <span class="preview-item-price">$65</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Balayage Coloring</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Handpainted gradient highlighting.</p>
-                        <span class="preview-item-price">$120</span>
-                    </div>
-                    <div class="preview-item">
-                        <div class="preview-item-title">Spa Manicure</div>
-                        <p class="font-sm" style="color: #64748b; margin-bottom: 4px;">Organic sugar scrub and gel finish.</p>
-                        <span class="preview-item-price">$35</span>
-                    </div>
-                </div>
-                <div class="preview-footer">
-                    <span>🕒 Mon-Sat: 9am - 8pm</span>
-                    <span>⭐ 4.9 Stars Google Reviews</span>
-                </div>
-            `
-        }
-    };
-
-    function openModal(modelKey) {
-        const preview = modelPreviews[modelKey];
-        if (!preview) return;
-
+    function openModal(modelKey, modelTitle) {
         modalBody.innerHTML = `
-            <h2>${preview.title}</h2>
-            <p class="text-muted font-sm" style="margin-bottom: 20px;">This is a premium, lightweight interactive mockup of the template structure.</p>
+            <div class="modal-header-nav">
+                <h2>${modelTitle} - Live Preview</h2>
+                <p class="text-muted font-sm" style="margin-bottom: 12px;">This is a fully interactive live website model. Scroll, click buttons, and experience the design layout.</p>
+            </div>
             <div class="mock-browser">
                 <div class="browser-header">
                     <div class="dots"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
-                    <div class="browser-url"><i data-lucide="lock" style="width: 10px; height: 10px;"></i> ${preview.url}</div>
+                    <div class="browser-url"><i data-lucide="lock" style="width: 10px; height: 10px;"></i> jsvsites.com/projects/${modelKey}/</div>
                 </div>
-                <div class="browser-content ${preview.theme}">
-                    ${preview.content}
+                <div class="browser-iframe-container">
+                    <iframe src="projects/${modelKey}/index.html" class="browser-iframe" title="${modelTitle}"></iframe>
                 </div>
             </div>
-            <div style="margin-top: 30px; display: flex; justify-content: flex-end; gap: 12px;">
-                <button class="btn btn-secondary" id="modalCloseSecondary">Close Preview</button>
-                <button class="btn btn-primary" id="modalChooseBtn" data-model-name="${modelKey}">Select This Model</button>
+            <div style="margin-top: 24px; display: flex; justify-content: flex-end; gap: 12px;">
+                <button class="btn btn-secondary btn-sm" id="modalCloseSecondary">Close Preview</button>
+                <button class="btn btn-primary btn-sm" id="modalChooseBtn" data-model-name="${modelKey}">Select This Model</button>
             </div>
         `;
 
@@ -312,15 +151,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Stop background scroll
 
         // Modal Choose Button event
         document.getElementById('modalChooseBtn').addEventListener('click', (e) => {
             const key = e.target.getAttribute('data-model-name');
             let formattedName = '';
-            if (key === 'bakehouse') formattedName = 'BakeHouse Model';
-            if (key === 'freshcart') formattedName = 'FreshCart Model';
-            if (key === 'fitlife') formattedName = 'FitLife Model';
-            if (key === 'urbansalon') formattedName = 'UrbanSalon Model';
+            if (key === 'hotel') formattedName = 'Aura Resort & Spa';
+            if (key === 'saloon') formattedName = 'Luxe Hair Studio';
+            if (key === 'listking') formattedName = 'ListKing Utility';
+            if (key === 'store') formattedName = 'Sri Saravana Store';
+            if (key === 'mobile') formattedName = 'ElectroFix Mobile Shop';
+            if (key === 'education') formattedName = 'EduQuest Academy';
+            if (key === 'company') formattedName = 'Apex Consulting';
 
             // Find choose btn from list
             const trigger = document.querySelector(`.select-model-btn[data-model-name="${formattedName}"]`);
@@ -336,13 +179,15 @@ document.addEventListener('DOMContentLoaded', () => {
     function closeModal() {
         modalOverlay.classList.remove('active');
         modalBody.innerHTML = '';
+        document.body.style.overflow = ''; // Restore background scroll
     }
 
     // Click triggers
     document.querySelectorAll('.preview-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const modelKey = btn.getAttribute('data-model');
-            openModal(modelKey);
+            const modelTitle = btn.getAttribute('data-model-title');
+            openModal(modelKey, modelTitle);
         });
     });
 

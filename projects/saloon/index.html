@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Hair Studio | Premium Saloon & Grooming Lounge</title>
+  <meta name="description" content="Indulge in Luxe Hair Studio. Experience master haircutting, couture coloring, organic scalp therapies, and grooming services by top specialists.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Navbar -->
+  <header class="navbar" id="site-header">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo" id="logo-link">
+        <span class="logo-serif">LUXE</span>
+        <span class="logo-sans">HAIR STUDIO</span>
+      </a>
+
+      <button class="nav-toggle-btn" id="menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links-menu" id="menu-panel">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#team" class="nav-link">Stylists</a>
+        <a href="#book" class="book-cta-btn" id="nav-book-btn">Request Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop-layer"></div>
+      <div class="container hero-grid">
+        <div class="hero-text-panel">
+          <span class="hero-tagline">ARTISTRY IN GROOMING</span>
+          <h1 class="hero-main-title">Crafting Your Visual Narrative</h1>
+          <p class="hero-description">At Luxe, we treat hair as sculpture. Discover bespoke haircuts, hand-painted balayage, and luxurious scalp treatments tailored to reveal your authentic aesthetic.</p>
+          <div class="hero-cta-group">
+            <a href="#services" class="btn btn-dark" id="btn-show-services">Explore Services</a>
+            <a href="#book" class="btn btn-rose" id="btn-show-booking">Schedule Inquiries</a>
+          </div>
+        </div>
+        <div class="hero-display-panel">
+          <div class="frame-border">
+            <div class="frame-content">
+              <span class="frame-tag">Est. 2018</span>
+              <h3>Premium Craft</h3>
+              <p>Top 10 Boutique Salons</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-badge">Bespoke Menu</span>
+          <h2>Couture Services & Treatment Pricing</h2>
+          <p>Select a category to browse our refined haircuts, technical coloring, and spa treatments.</p>
+        </div>
+
+        <div class="menu-tab-wrapper">
+          <button class="menu-tab-btn active" data-category="styling" id="tab-styling-btn">Styling & Cut</button>
+          <button class="menu-tab-btn" data-category="coloring" id="tab-color-btn">Couture Color</button>
+          <button class="menu-tab-btn" data-category="treatments" id="tab-spa-btn">Hair Therapy & Spa</button>
+        </div>
+
+        <div class="services-list-container">
+          <!-- Styling & Cuts Menu -->
+          <div class="service-menu-list active" id="menu-styling">
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Signature Haircut & Finish</h4>
+                <span class="item-price">$90+</span>
+              </div>
+              <p>Detailed consultation, relaxing botanical shampoo wash, precision cut, and signature blow-dry styling.</p>
+            </div>
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Couture Blow-Dry & Styling</h4>
+                <span class="item-price">$65+</span>
+              </div>
+              <p>Volumetric round-brush styling, curl sculpting, or sleek flat-iron sets for special events.</p>
+            </div>
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Artisanal Beard Trim & Shave</h4>
+                <span class="item-price">$55+</span>
+              </div>
+              <p>Hot towel service, straight razor contouring, beard conditioning oil, and scalp massage.</p>
+            </div>
+          </div>
+
+          <!-- Couture Color Menu -->
+          <div class="service-menu-list" id="menu-coloring">
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Hand-Painted Balayage</h4>
+                <span class="item-price">$240+</span>
+              </div>
+              <p>Custom freehand clay lighting to achieve sun-kissed, low-maintenance dimensional color transitions.</p>
+            </div>
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Full Creative Highlights</h4>
+                <span class="item-price">$180+</span>
+              </div>
+              <p>Multi-dimensional foil highlights, root shadow smudges, and custom toning gloss.</p>
+            </div>
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Single Process Tint</h4>
+                <span class="item-price">$120+</span>
+              </div>
+              <p>All-over permanent root coverage or gloss gloss enrichment for deep shine.</p>
+            </div>
+          </div>
+
+          <!-- Treatments Menu -->
+          <div class="service-menu-list" id="menu-treatments">
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Organic Scalp Detox Therapy</h4>
+                <span class="item-price">$85+</span>
+              </div>
+              <p>Exfoliating clay treatments, customized tea-tree steam wash, and dynamic acupressure neck massage.</p>
+            </div>
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Keratin Smoothing Treatment</h4>
+                <span class="item-price">$280+</span>
+              </div>
+              <p>Premium amino-acid rich keratin seals to eliminate frizz, seal cuticles, and lock in shine for 12 weeks.</p>
+            </div>
+            <div class="menu-item-row">
+              <div class="item-name-row">
+                <h4>Botanical Repair & Moisture Mask</h4>
+                <span class="item-price">$45+</span>
+              </div>
+              <p>Add-on deep moisture infusion using organic lavender and shea oil under botanical steam vents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stylist Showcase Section -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-title-wrapper">
+          <span class="section-badge">Master Artisans</span>
+          <h2>Meet the Creative Directors</h2>
+          <p>Our specialists participate in Paris & New York Fashion Weeks to bring you forward-thinking hair architectures.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Stylist 1 -->
+          <div class="stylist-card" data-stylist="Julian Thorne">
+            <div class="stylist-img-placeholder">JT</div>
+            <div class="stylist-details">
+              <h3>Julian Thorne</h3>
+              <span class="stylist-role">Creative Director & Master Stylist</span>
+              <p>14 years modeling razor-sharp geometry haircuts and avant-garde styling for editorial catalogs.</p>
+              <span class="stylist-specialty">Focus: Precision Cuts & Volumetric Styling</span>
+            </div>
+          </div>
+
+          <!-- Stylist 2 -->
+          <div class="stylist-card" data-stylist="Clara Vance">
+            <div class="stylist-img-placeholder">CV</div>
+            <div class="stylist-details">
+              <h3>Clara Vance</h3>
+              <span class="stylist-role">Lead Color Alchemist</span>
+              <p>Specializes in French balayage painting, custom blonde tones, and dramatic fashion color correction.</p>
+              <span class="stylist-specialty">Focus: Couture Balayage & Highlight Smudges</span>
+            </div>
+          </div>
+
+          <!-- Stylist 3 -->
+          <div class="stylist-card" data-stylist="Marcus Lin">
+            <div class="stylist-role-bubble">Barber Expert</div>
+            <div class="stylist-img-placeholder">ML</div>
+            <div class="stylist-details">
+              <h3>Marcus Lin</h3>
+              <span class="stylist-role">Men's Grooming Specialist</span>
+              <p>Trained in London. Focuses on hot towel straight razor shaves, modern fades, and head massage rituals.</p>
+              <span class="stylist-specialty">Focus: High-Fade Contouring & Shave Rituals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section" id="book">
+      <div class="container booking-container">
+        <div class="booking-box">
+          <div class="booking-intro">
+            <h2>Book Your Experience</h2>
+            <p>Select your desired services and choose an artisan stylist. A Luxe coordinator will contact you to verify details and finalize the calendar reservation.</p>
+          </div>
+
+          <form class="booking-form" id="saloon-booking-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="book-name">Full Name</label>
+                <input type="text" id="book-name" required placeholder="Giselle Thorne">
+              </div>
+
+              <div class="form-group">
+                <label for="book-phone">Contact Number</label>
+                <input type="tel" id="book-phone" required placeholder="+1 (555) 012-3456">
+              </div>
+
+              <div class="form-group">
+                <label for="service-choice">Service Category</label>
+                <select id="service-choice" required>
+                  <option value="" disabled selected>Select Service</option>
+                  <option value="cut">Signature Haircut & Finish ($90)</option>
+                  <option value="blowdry">Couture Blow-Dry ($65)</option>
+                  <option value="shave">Artisanal Beard Trim ($55)</option>
+                  <option value="balayage">Hand-Painted Balayage ($240)</option>
+                  <option value="detox">Organic Scalp Detox ($85)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="stylist-choice">Preferred Stylist</label>
+                <select id="stylist-choice" required>
+                  <option value="" disabled selected>Select Stylist</option>
+                  <option value="julian">Julian Thorne (Master Stylist)</option>
+                  <option value="clara">Clara Vance (Color Specialist)</option>
+                  <option value="marcus">Marcus Lin (Men's Grooming)</option>
+                  <option value="any">First Available Artisan</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="book-date">Preferred Date</label>
+                <input type="date" id="book-date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="book-time">Time Window</label>
+                <select id="book-time" required>
+                  <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                  <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                  <option value="evening">Evening (4:00 PM - 7:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-rose btn-block" id="booking-submit-btn" style="margin-top: 24px;">Send Session Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-serif">LUXE</span>
+          <span class="logo-sub">HAIR STUDIO</span>
+        </a>
+        <p>Crafting couture hair structures and bespoke grooming designs since 2018.</p>
+      </div>
+      <div class="footer-col">
+        <h4>HOURS</h4>
+        <p>Tue - Sat: 9:00 AM - 7:00 PM</p>
+        <p>Sun - Mon: Closed</p>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <p>concierge@luxehair.com</p>
+        <p>+1 (800) 999-LUXE</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Luxe Hair Studio Group. (Marketing Prototype Only)</p>
+        <div class="legal-links">
+          <a href="#">Sanitary Code</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

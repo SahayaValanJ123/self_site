@@ -869,10 +869,13 @@ ul {
     background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(7, 8, 14, 0.4) 100%);
 }
 
-.cafe-visual { background: linear-gradient(135deg, #2c1b18 0%, #160f0d 100%); }
-.store-visual { background: linear-gradient(135deg, #132c20 0%, #0a1711 100%); }
-.gym-visual { background: linear-gradient(135deg, #1c263c 0%, #0f1420 100%); }
-.salon-visual { background: linear-gradient(135deg, #2e1828 0%, #180d15 100%); }
+.hotel-visual { background: linear-gradient(135deg, #2a2015 0%, #130f0a 100%); }
+.saloon-visual { background: linear-gradient(135deg, #2c1225 0%, #140811 100%); }
+.listking-visual { background: linear-gradient(135deg, #12223a 0%, #08111d 100%); }
+.store-visual { background: linear-gradient(135deg, #0d291e 0%, #05140f 100%); }
+.mobile-visual { background: linear-gradient(135deg, #132731 0%, #091318 100%); }
+.education-visual { background: linear-gradient(135deg, #141738 0%, #090b1c 100%); }
+.company-visual { background: linear-gradient(135deg, #24252e 0%, #101115 100%); }
 
 .visual-inner {
     width: 100%;
@@ -1332,7 +1335,7 @@ textarea {
     border: 1px solid var(--card-border-glow);
     border-radius: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 960px;
     max-height: 90vh;
     box-shadow: var(--shadow-lg);
     position: relative;
@@ -1401,120 +1404,36 @@ textarea {
     gap: 6px;
 }
 
-.browser-content {
-    background: #ffffff;
-    color: #1e293b;
-    padding: 24px;
-    min-height: 350px;
-    font-family: system-ui, -apple-system, sans-serif;
+.browser-iframe-container {
+    width: 100%;
+    height: 480px;
+    background: #0f111a;
+    position: relative;
+    overflow: hidden;
 }
 
-.preview-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #e2e8f0;
-    margin-bottom: 24px;
-}
-
-.preview-logo {
-    font-weight: 800;
-    font-size: 1.1rem;
-    color: #0f172a;
-}
-
-.preview-menu {
-    display: flex;
-    gap: 16px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #475569;
-}
-
-.preview-btn {
-    background: #4f46e5;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 0.75rem;
-    font-weight: 600;
+.browser-iframe {
+    width: 100%;
+    height: 100%;
     border: none;
+    background: #ffffff;
 }
 
-.preview-hero {
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto 30px auto;
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
 }
-
-.preview-hero h2 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin-bottom: 12px;
-    line-height: 1.2;
+::-webkit-scrollbar-track {
+    background: var(--bg-darker);
 }
-
-.preview-hero p {
-    font-size: 0.9rem;
-    color: #475569;
-    margin-bottom: 20px;
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
 }
-
-.preview-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 16px;
-    margin-bottom: 24px;
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
 }
-
-.preview-item {
-    border: 1px solid #e2e8f0;
-    padding: 16px;
-    border-radius: 8px;
-    background: #f8fafc;
-    text-align: center;
-}
-
-.preview-item-title {
-    font-weight: 700;
-    font-size: 0.85rem;
-    color: #1e293b;
-    margin-bottom: 6px;
-}
-
-.preview-item-price {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #4f46e5;
-}
-
-.preview-footer {
-    border-top: 1px solid #e2e8f0;
-    padding-top: 16px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.75rem;
-    color: #64748b;
-}
-
-/* Dynamic preview themes override */
-.theme-cafe .preview-btn { background: #b45309; }
-.theme-cafe .preview-item-price { color: #b45309; }
-.theme-cafe .preview-logo { color: #78350f; }
-
-.theme-store .preview-btn { background: #059669; }
-.theme-store .preview-item-price { color: #059669; }
-.theme-store .preview-logo { color: #065f46; }
-
-.theme-gym .preview-btn { background: #1e3a8a; }
-.theme-gym .preview-item-price { color: #1e3a8a; }
-.theme-gym .preview-logo { color: #1e3a8a; }
-
-.theme-salon .preview-btn { background: #db2777; }
-.theme-salon .preview-item-price { color: #db2777; }
-.theme-salon .preview-logo { color: #9d174d; }
 
 
 /* Responsive Breakpoints */
