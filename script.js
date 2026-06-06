@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const mobileToggle = document.getElementById('mobileToggle');
     const navMenu = document.getElementById('navMenu');
-    const menuIcon = document.getElementById('menuIcon');
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -24,10 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const isOpen = navMenu.classList.contains('active');
         
         // Update menu icon
-        if (isOpen) {
-            menuIcon.setAttribute('data-lucide', 'x');
-        } else {
-            menuIcon.setAttribute('data-lucide', 'menu');
+        const currentIcon = document.getElementById('menuIcon');
+        if (currentIcon) {
+            if (isOpen) {
+                currentIcon.setAttribute('data-lucide', 'x');
+            } else {
+                currentIcon.setAttribute('data-lucide', 'menu');
+            }
         }
         if (window.lucide) {
             window.lucide.createIcons();
@@ -38,7 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
-            menuIcon.setAttribute('data-lucide', 'menu');
+            const currentIcon = document.getElementById('menuIcon');
+            if (currentIcon) {
+                currentIcon.setAttribute('data-lucide', 'menu');
+            }
             if (window.lucide) {
                 window.lucide.createIcons();
             }
@@ -109,6 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (modelName === 'Apex Consulting') {
                 serviceSelect.value = 'Multi-Page Website';
                 modelSelect.value = 'Apex Consulting';
+            } else if (modelName === 'Pudhuvayal') {
+                serviceSelect.value = 'Single-Page Website';
+                modelSelect.value = 'Pudhuvayal';
             }
             
             // Set message
@@ -164,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (key === 'mobile') formattedName = 'ElectroFix Mobile Shop';
             if (key === 'education') formattedName = 'EduQuest Academy';
             if (key === 'company') formattedName = 'Apex Consulting';
+            if (key === 'pv_web') formattedName = 'Pudhuvayal';
 
             // Find choose btn from list
             const trigger = document.querySelector(`.select-model-btn[data-model-name="${formattedName}"]`);

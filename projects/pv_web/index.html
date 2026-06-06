@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Pudhuvayal - From Our Fields To Your Family — Zero Middlemen, 100% Fresh.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Pudhuvayal | Farm-to-Home Marketplace</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="icon.png"/>
+</head>
+<body>
+  
+  <div class="interactive-bg" id="bg-layer"></div>
+
+  <div class="glass-container header-container">
+    <header>
+      <div class="logo-wrapper">
+        <img src="icon.png" alt="Pudhuvayal Logo" class="logo">
+        <h1>Pudhuvayal</h1>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#benefits">Farmers</a>
+        <a href="#pricing">Live Prices</a>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+    <section class="hero glass-container">
+      <div class="hero-content">
+        <h2>From Our Fields To Your Family —<br><span class="highlight">Zero Middlemen, 100% Fresh</span></h2>
+        <p>The premier hyper-local, farm-to-home agri-tech marketplace in Tamil Nadu. Connect directly with verified local farmers.</p>
+        <div class="app-downloads">
+          <a href="#" class="download-btn google-play">
+            <svg viewBox="0 0 512 512" width="24" height="24" fill="currentColor"><path d="M325.3 234.3L104.6 13.2C93.9 2.5 77.3-2.9 61.1 1.7 44.8 6.4 32 20.9 32 37.8v436.4c0 16.9 12.8 31.4 29.1 36.1 16.2 4.7 32.8-.8 43.5-11.5l220.7-221.1c11.9-11.9 11.9-31.5 0-43.4zM368.5 277.5L469 378c15.6 15.6 40.9 15.6 56.6 0 15.6-15.6 15.6-40.9 0-56.6l-100.5-100.5-56.6 56.6zM469 134c-15.6-15.6-40.9-15.6-56.6 0L368.5 234.5l56.6 56.6L469 190.6c15.6-15.6 15.6-40.9 0-56.6z"/></svg>
+            <span>Get it on<br><strong>Google Play</strong></span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-mockup">
+        <div class="phone-frame">
+          <img src="file.png" alt="Pudhuvayal App Preview" class="app-screenshot">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-grid">
+      <div class="feature-card glass-container">
+        <div class="icon">💳</div>
+        <h3>Secure Upfront Payments</h3>
+        <p>Automated marketplace payment splitting powered by Cashfree ensures trust and transparency for all transactions.</p>
+      </div>
+      <div class="feature-card glass-container">
+        <div class="icon">🚚</div>
+        <h3>Hyper-Local Fast Delivery</h3>
+        <p>Get fresh produce delivered to your doorstep swiftly with our optimized local logistics network.</p>
+      </div>
+      <div class="feature-card glass-container">
+        <div class="icon">✅</div>
+        <h3>100% Authenticated Farmers</h3>
+        <p>Every farmer is verified via Aadhaar and Patta/Chitta against government records for guaranteed authenticity.</p>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits glass-container">
+      <div class="benefits-content">
+        <h2>Empowering Local Farmers</h2>
+        <p>By eliminating the middlemen, Pudhuvayal significantly enhances profit margins for growers while providing better prices to consumers. It's a win-win ecosystem built on fairness.</p>
+        <ul class="benefit-list">
+          <li>✓ Direct access to retail and bulk B2B buyers (hotels/restaurants).</li>
+          <li>✓ Real-time market data for dynamic and fair pricing.</li>
+          <li>✓ Strict data privacy and transparent operations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pricing" class="live-pricing glass-container">
+      <div class="pricing-header">
+        <h2>Live Market Prices</h2>
+        <span class="live-indicator"><span class="dot"></span> Live</span>
+      </div>
+      <p class="subtitle">Real-time data streams reflecting dynamic price updates.</p>
+      
+      <div class="price-ticker" id="price-container">
+        <!-- Javascript will populate this -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="glass-container footer-container">
+    <div class="footer-grid">
+      <div class="footer-info">
+        <div class="logo-wrapper">
+          <img src="icon.png" alt="Pudhuvayal Logo" class="logo small">
+          <h3>Pudhuvayal</h3>
+        </div>
+        <p>The hyper-local agri-tech marketplace.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Legal Compliance</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Shipping & Delivery Policy</a>
+        <a href="#">Refund/Cancellation Policy</a>
+      </div>
+      
+      <div class="footer-contact">
+        <h4>Office Contact</h4>
+        <p><strong>PUDHUVAYAL</strong></p>
+        <p>North Street, Pothakalavilai</p>
+        <p>Satankulam, Tuticorin District</p>
+        <p>Tamil Nadu, Pin: 628702</p>
+        <p>Email: <a href="mailto:sahayavalanj1@gmail.com">sahayavalanj1@gmail.com</a></p>
+        <p>Phone: +91 8248074540</p>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 Pudhuvayal. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Parallax background effect
+    const bgLayer = document.getElementById('bg-layer');
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      bgLayer.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    // Mock Live Pricing Data
+    const mockPrices = [
+      { item: 'Tomato', price: '₹45/kg', trend: 'up' },
+      { item: 'Onion (Bellary)', price: '₹60/kg', trend: 'down' },
+      { item: 'Potato', price: '₹35/kg', trend: 'stable' },
+      { item: 'Carrot (Ooty)', price: '₹80/kg', trend: 'up' },
+      { item: 'Cabbage', price: '₹25/kg', trend: 'down' },
+      { item: 'Green Chilli', price: '₹55/kg', trend: 'up' }
+    ];
+
+    function renderPrices() {
+      const container = document.getElementById('price-container');
+      container.innerHTML = '';
+      mockPrices.forEach(data => {
+        const itemEl = document.createElement('div');
+        itemEl.className = 'price-item';
+        
+        let trendIcon = '➖';
+        let trendClass = 'stable';
+        if (data.trend === 'up') { trendIcon = '🔺'; trendClass = 'up'; }
+        if (data.trend === 'down') { trendIcon = '🔻'; trendClass = 'down'; }
+
+        itemEl.innerHTML = `
+          <span class="item-name">${data.item}</span>
+          <span class="item-price">${data.price}</span>
+          <span class="item-trend ${trendClass}">${trendIcon}</span>
+        `;
+        container.appendChild(itemEl);
+      });
+    }
+
+    renderPrices();
+
+    // Simulate price updates
+    setInterval(() => {
+      const index = Math.floor(Math.random() * mockPrices.length);
+      const currentPrice = parseInt(mockPrices[index].price.replace(/[^0-9]/g, ''));
+      const change = Math.floor(Math.random() * 5) - 2; // -2 to +2
+      if (change !== 0) {
+        mockPrices[index].price = `₹${currentPrice + change}/kg`;
+        mockPrices[index].trend = change > 0 ? 'up' : 'down';
+        renderPrices();
+      }
+    }, 3000);
+  </script>
+</body>
+</html>
